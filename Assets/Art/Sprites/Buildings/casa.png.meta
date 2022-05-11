@@ -1,43 +1,34 @@
 fileFormatVersion: 2
-guid: f9a21c7164f775346a5df2dd9d70b0cd
+guid: d0a4f327229093a41a904911152cc52b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4837632671368790554
-    second: Mor_Highwall_all_0
+      213: 3702124854129300464
+    second: casa_0
   - first:
-      213: 7782033999917374813
-    second: Mor_Highwall_all_1
+      213: -5184323720652497409
+    second: casa_1
   - first:
-      213: 5546248224229531270
-    second: Mor_Highwall_all_2
+      213: -7648812651202438912
+    second: casa_2
   - first:
-      213: -912369185989275168
-    second: Mor_Highwall_all_3
+      213: -3075188121026217325
+    second: casa_3
   - first:
-      213: -7622006506580712996
-    second: Mor_Highwall_all_4
+      213: 1014899153824402146
+    second: casa_4
   - first:
-      213: 6033779094522569649
-    second: Mor_Highwall_all_5
+      213: 7574918916827462501
+    second: casa_5
   - first:
-      213: -3322372909695903127
-    second: Mor_Highwall_all_6
+      213: 1238524719769088597
+    second: casa_6
   - first:
-      213: -87215447566848377
-    second: Mor_Highwall_all_7
+      213: -6735101341586564042
+    second: casa_7
   - first:
-      213: -7825651945970831282
-    second: Mor_Highwall_all_8
-  - first:
-      213: -1606860091371455807
-    second: Mor_Highwall_all_9
-  - first:
-      213: 2253808780266436220
-    second: Mor_Highwall_all_10
-  - first:
-      213: 3366940546938814407
-    second: Mor_Highwall_all_11
+      213: -34733008507973717
+    second: casa_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -68,7 +59,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -104,7 +95,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +107,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,75 +118,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mor_Highwall_all_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ed3d3d57b64ddcb0800000000000000
-      internalID: -4837632671368790554
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mor_Highwall_all_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 96
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5d561321b65ffb60800000000000000
-      internalID: 7782033999917374813
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mor_Highwall_all_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68e9759ef5b38fc40800000000000000
-      internalID: 5546248224229531270
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mor_Highwall_all_3
+      name: casa_0
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -204,40 +132,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e1d81d2f0d9653f0800000000000000
-      internalID: -912369185989275168
+      spriteID: 0f3958ca0f6906330800000000000000
+      internalID: 3702124854129300464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mor_Highwall_all_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd16a832771393690800000000000000
-      internalID: -7622006506580712996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mor_Highwall_all_5
+      name: casa_1
       rect:
         serializedVersion: 2
         x: 32
         y: 64
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -246,19 +153,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b3223e3e1a4cb350800000000000000
-      internalID: 6033779094522569649
+      spriteID: ffd50e53b059d08b0800000000000000
+      internalID: -5184323720652497409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mor_Highwall_all_6
+      name: casa_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009909b3b65f9d590800000000000000
+      internalID: -7648812651202438912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casa_3
       rect:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -267,40 +195,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96ad13af07f84e1d0800000000000000
-      internalID: -3322372909695903127
+      spriteID: 39a3bbc62bcb255d0800000000000000
+      internalID: -3075188121026217325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mor_Highwall_all_7
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78ee9d433062acef0800000000000000
-      internalID: -87215447566848377
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mor_Highwall_all_8
+      name: casa_4
       rect:
         serializedVersion: 2
         x: 32
         y: 32
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -309,19 +216,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4070986403b56390800000000000000
-      internalID: -7825651945970831282
+      spriteID: 2ea4c8a3765a51e00800000000000000
+      internalID: 1014899153824402146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mor_Highwall_all_9
+      name: casa_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b33e70f948f1960800000000000000
+      internalID: 7574918916827462501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casa_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -330,40 +258,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ca7d0aa24943b9e0800000000000000
-      internalID: -1606860091371455807
+      spriteID: 552706fabaf103110800000000000000
+      internalID: 1238524719769088597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mor_Highwall_all_10
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c76ff6bf423274f10800000000000000
-      internalID: 2253808780266436220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mor_Highwall_all_11
+      name: casa_7
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 16
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -372,8 +279,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cfb520b696c9be20800000000000000
-      internalID: 3366940546938814407
+      spriteID: 63cd970930d1882a0800000000000000
+      internalID: -6735101341586564042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: casa_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafc6e5438a948ff0800000000000000
+      internalID: -34733008507973717
       vertices: []
       indices: 
       edges: []
