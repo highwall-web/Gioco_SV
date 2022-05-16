@@ -51,6 +51,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -316,6 +317,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      casa_2: -7648812651202438912
+      casa_3: -3075188121026217325
+      casa_1: -5184323720652497409
+      casa_7: -6735101341586564042
+      casa_5: 7574918916827462501
+      casa_0: 3702124854129300464
+      casa_4: 1014899153824402146
+      casa_6: 1238524719769088597
+      casa_8: -34733008507973717
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -144,6 +144,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1060,6 +1061,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      tile_set_road_full_20: 1761586350076852553
+      tile_set_road_full_13: -1458453952201749990
+      tile_set_road_full_6: -3638123326971340575
+      tile_set_road_full_14: -1154674135391896339
+      tile_set_road_full_34: 2202555156067886691
+      tile_set_road_full_21: -6794332498931812811
+      tile_set_road_full_29: -7912048473964536380
+      tile_set_road_full_36: 9182487455206073173
+      tile_set_road_full_4: -3840508223728255324
+      tile_set_road_full_16: -1002325818041718023
+      tile_set_road_full_15: 8672180956083837756
+      tile_set_road_full_3: 2190309415041659127
+      tile_set_road_full_18: -3186886676569306597
+      tile_set_road_full_7: -3180275488397041617
+      tile_set_road_full_2: -2906175871437142375
+      tile_set_road_full_39: 632051223862810192
+      tile_set_road_full_22: 3921156158922798476
+      tile_set_road_full_38: 2417619083631368900
+      tile_set_road_full_0: 1367690543463972853
+      tile_set_road_full_35: -5687098186652487718
+      tile_set_road_full_27: -4503613571496144614
+      tile_set_road_full_10: 8820684200443792356
+      tile_set_road_full_25: 8379389570278963656
+      tile_set_road_full_24: -2775674521244253351
+      tile_set_road_full_8: 4861949051897001866
+      tile_set_road_full_30: -1071476543273320546
+      tile_set_road_full_26: 7426098320882913322
+      tile_set_road_full_1: -5625630457836316444
+      tile_set_road_full_17: -2651381886238499646
+      tile_set_road_full_31: -4900231280129196752
+      tile_set_road_full_32: 7718394674082701452
+      tile_set_road_full_23: -1548580539564317284
+      tile_set_road_full_9: -7077613330564160671
+      tile_set_road_full_12: -8834445222723956178
+      tile_set_road_full_11: -7934673871903840545
+      tile_set_road_full_19: 7617121476652222051
+      tile_set_road_full_28: -106932792447066284
+      tile_set_road_full_5: 2375957108290383245
+      tile_set_road_full_37: 3215668505124741060
+      tile_set_road_full_33: 622063414603171297
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

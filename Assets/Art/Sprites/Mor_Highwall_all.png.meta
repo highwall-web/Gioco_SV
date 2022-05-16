@@ -60,6 +60,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -388,6 +389,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Mor_Highwall_all_3: -912369185989275168
+      Mor_Highwall_all_5: 6033779094522569649
+      Mor_Highwall_all_4: -7622006506580712996
+      Mor_Highwall_all_10: 2253808780266436220
+      Mor_Highwall_all_11: 3366940546938814407
+      Mor_Highwall_all_1: 7782033999917374813
+      Mor_Highwall_all_0: -4837632671368790554
+      Mor_Highwall_all_9: -1606860091371455807
+      Mor_Highwall_all_6: -3322372909695903127
+      Mor_Highwall_all_8: -7825651945970831282
+      Mor_Highwall_all_7: -87215447566848377
+      Mor_Highwall_all_2: 5546248224229531270
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
