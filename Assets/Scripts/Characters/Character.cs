@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +15,7 @@ public class Character : MonoBehaviour
     {
         animator = GetComponent<CharacterAnimator>();
     }
-    public IEnumerator Move(Vector2 moveVec)
+    public IEnumerator Move(Vector2 moveVec, Action OnMoveOver = null)
     {
         animator.MoveX = Mathf.Clamp(moveVec.x, -1f, 1f);
         animator.MoveY = Mathf.Clamp(moveVec.y, -1f, 1f);
@@ -36,6 +37,8 @@ public class Character : MonoBehaviour
         transform.position = targetPos;
 
         IsMoving = false;
+
+        OnMoveOver?.Invoke();
     }
 
     public void HandleUpdate()
