@@ -6,8 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     private Vector2 input;
 
-    const float offsetY = 0.3f;
-
     private Character character;
 
     private void Awake()
@@ -59,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnMoveOver()
     {
-        var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, offsetY), 0.2f, GameLayers.i.TriggerableLayers);
+        var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, character.OffsetY), 0.2f, GameLayers.i.TriggerableLayers);
 
         foreach (var collider in colliders)
         {
@@ -71,5 +69,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+
+    public Character Character => character;
 
 }
