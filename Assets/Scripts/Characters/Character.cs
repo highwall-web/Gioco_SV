@@ -19,6 +19,7 @@ public class Character : MonoBehaviour
         SetPositionAndSnapToTile(transform.position);
     }
 
+
     public void SetPositionAndSnapToTile(Vector2 pos)
     {
         pos.x = Mathf.Floor(pos.x) + 0.5f;
@@ -35,19 +36,19 @@ public class Character : MonoBehaviour
         var targetPos = transform.position;
         targetPos.x += moveVec.x;
         targetPos.y += moveVec.y;
-
         if (!isPathClear(targetPos))
             yield break;
 
         IsMoving = true;
-
+        
         while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
         {
+            
             transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
             yield return null;
         }
         transform.position = targetPos;
-
+        
         IsMoving = false;
 
         OnMoveOver?.Invoke();
@@ -69,7 +70,7 @@ public class Character : MonoBehaviour
         return true;
     }
 
-    /*deprecato
+    
     private bool IsWalkable(Vector3 targetPos)
     {
         if (Physics2D.OverlapCircle(targetPos, 0.0f, GameLayers.i.SolidLayer | GameLayers.i.InteractableLayer) != null)
@@ -78,7 +79,7 @@ public class Character : MonoBehaviour
         }
         return true;
     }
-    */
+    
     public void lookTowards(Vector3 targetPos)
     {
         var xDiff = Mathf.Floor(targetPos.x) - Mathf.Floor(transform.position.x);
