@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
         //Debug.DrawLine(transform.position, interactingPos, Color.red, 0.5f);
 
-        var collider = Physics2D.OverlapCircle(interactingPos, 0.2f, GameLayers.i.InteractableLayer);
+        var collider = Physics2D.OverlapCircle(interactingPos, 0.5f, GameLayers.i.InteractableLayer);
 
         if ( collider != null)
         {
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnMoveOver()
     {
-        var colliders = Physics2D.OverlapCircleAll(transform.position - new Vector3(0, character.OffsetY), 0.2f, GameLayers.i.TriggerableLayers);
+        var colliders = Physics2D.OverlapCircleAll(transform.position, 0.0f, GameLayers.i.TriggerableLayers);
 
         foreach (var collider in colliders)
         {

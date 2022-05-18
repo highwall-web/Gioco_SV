@@ -11,7 +11,7 @@ public class Character : MonoBehaviour
 
     CharacterAnimator animator;
 
-    public float OffsetY { get; private set; } = 0.3f;
+    public float OffsetY { get; private set; } = 0.5f;
 
     public void Awake()
     {
@@ -23,7 +23,7 @@ public class Character : MonoBehaviour
     public void SetPositionAndSnapToTile(Vector2 pos)
     {
         pos.x = Mathf.Floor(pos.x) + 0.5f;
-        pos.y = Mathf.Floor(pos.y) + 0.5f + OffsetY;
+        pos.y = Mathf.Floor(pos.y) + OffsetY;
 
         transform.position = pos;
     }
@@ -63,7 +63,7 @@ public class Character : MonoBehaviour
     {
         var diff = targetPos - transform.position;
         var dir = diff.normalized;
-        if(Physics2D.BoxCast(transform.position + dir, new Vector2(0.2f, 0.2f), 0f, dir, diff.magnitude - 1, GameLayers.i.SolidLayer | GameLayers.i.InteractableLayer | GameLayers.i.PlayerLayer))
+        if(Physics2D.BoxCast(transform.position + dir, new Vector2(0.5f, 0.5f), 0f, dir, diff.magnitude - 1, GameLayers.i.SolidLayer | GameLayers.i.InteractableLayer | GameLayers.i.PlayerLayer))
         {
             return false;
         }
