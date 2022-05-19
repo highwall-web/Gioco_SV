@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Dialog, Paused}
+public enum GameState { FreeRoam, Dialog, Menu, Paused}
 
 public class GameController : MonoBehaviour
 {
@@ -15,12 +15,14 @@ public class GameController : MonoBehaviour
     public SceneDetails CurrentScene { get; private set; }
     public SceneDetails PrevScene { get; private set; }
 
-
+    MenuController menuController;
     public static GameController Instance { get; private set; }
 
     private void Awake()
     {
         Instance = this;
+
+        menuController = GetComponent<MenuController>();
     }
 
     private void Start()
@@ -37,6 +39,13 @@ public class GameController : MonoBehaviour
             }
                 
         };
+
+        menuController.onBack += () =>
+        {
+            state = GameState.FreeRoam;
+        };
+
+        menuController.onMenuSelected += OnMenuSelected;
     }
 
     public void PauseGame(bool pause)
@@ -57,18 +66,20 @@ public class GameController : MonoBehaviour
         if (state == GameState.FreeRoam)
         {
             playerController.HandleUpdate();
-            if (Input.GetKeyDown(KeyCode.S))
+
+            if(Input.GetKeyDown(KeyCode.Return))
             {
-                SavingSystem.i.Save("Saveslot_01");
-            }
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                SavingSystem.i.Load("Saveslot_01");
+                menuController.OpenMenu();
+                state = GameState.Menu;
             }
         }
-        else if( state == GameState.Dialog)
+        else if(state == GameState.Dialog)
         {
             DialogManager.Instance.HandleUpdate();
+        }
+        else if(state == GameState.Menu)
+        {
+            menuController.HandleUpdate();
         }
         
     }
@@ -77,5 +88,21 @@ public class GameController : MonoBehaviour
     {
         PrevScene = CurrentScene;
         CurrentScene = currScene;
+    }
+
+    void OnMenuSelected(int selectedItem)
+    {
+        if(selectedItem == 0)
+        {
+            // Save
+            SavingSystem.i.Save("Saveslot_01");
+        }
+        else if(selectedItem == 1)
+        {
+            // Load
+            SavingSystem.i.Load("Saveslot_01");
+        }
+
+        state = GameState.FreeRoam;
     }
 }
