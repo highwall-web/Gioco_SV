@@ -489,6 +489,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1870692560642804306}
     m_Modifications:
+    - target: {fileID: 8670205689498267584, guid: 1f0d825a51e153a41af9c9cee4780c31, type: 3}
+      propertyPath: m_HDR
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670205689498267584, guid: 1f0d825a51e153a41af9c9cee4780c31, type: 3}
+      propertyPath: orthographic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670205689498267584, guid: 1f0d825a51e153a41af9c9cee4780c31, type: 3}
+      propertyPath: orthographic size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670205689498267584, guid: 1f0d825a51e153a41af9c9cee4780c31, type: 3}
+      propertyPath: m_NormalizedViewPortRect.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670205689498267584, guid: 1f0d825a51e153a41af9c9cee4780c31, type: 3}
+      propertyPath: m_NormalizedViewPortRect.width
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670205689498267584, guid: 1f0d825a51e153a41af9c9cee4780c31, type: 3}
+      propertyPath: m_NormalizedViewPortRect.height
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8670205689940356295, guid: 1f0d825a51e153a41af9c9cee4780c31, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -562,6 +586,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1870692560642804306}
     m_Modifications:
+    - target: {fileID: 7402625529270569365, guid: 64b9bd97eafaef94dae7e6170796bce9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402625529270569366, guid: 64b9bd97eafaef94dae7e6170796bce9, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402625529270569366, guid: 64b9bd97eafaef94dae7e6170796bce9, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402625529270569366, guid: 64b9bd97eafaef94dae7e6170796bce9, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402625529270569366, guid: 64b9bd97eafaef94dae7e6170796bce9, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402625529270569366, guid: 64b9bd97eafaef94dae7e6170796bce9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402625529270569366, guid: 64b9bd97eafaef94dae7e6170796bce9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 95
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402625529270569366, guid: 64b9bd97eafaef94dae7e6170796bce9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.0000009536743
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402625529270569366, guid: 64b9bd97eafaef94dae7e6170796bce9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 82
+      objectReference: {fileID: 0}
     - target: {fileID: 7402625530375355050, guid: 64b9bd97eafaef94dae7e6170796bce9, type: 3}
       propertyPath: m_Name
       value: UI Canvas
