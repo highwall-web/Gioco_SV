@@ -57,11 +57,20 @@ public class GameController : MonoBehaviour
         if (state == GameState.FreeRoam)
         {
             playerController.HandleUpdate();
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                SavingSystem.i.Save("Saveslot_01");
+            }
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                SavingSystem.i.Load("Saveslot_01");
+            }
         }
         else if( state == GameState.Dialog)
         {
             DialogManager.Instance.HandleUpdate();
         }
+        
     }
 
     public void SetCurrentScene(SceneDetails currScene)
