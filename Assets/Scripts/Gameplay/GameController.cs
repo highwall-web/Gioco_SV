@@ -1,13 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Dialog, Menu, Paused}
+public enum GameState { FreeRoam, Dialog, Menu, Diary, Paused}
 
 public class GameController : MonoBehaviour
 {
 
     [SerializeField] PlayerController playerController;
+    [SerializeField] DiaryUI diaryUI;
 
     GameState state;
     GameState stateBeforePause;
@@ -81,6 +83,17 @@ public class GameController : MonoBehaviour
         {
             menuController.HandleUpdate();
         }
+        else if(state == GameState.Diary)
+        {
+            Debug.Log("Ma ci entri?");
+            Action onBack = () =>
+            {
+                diaryUI.gameObject.SetActive(false);
+                state = GameState.FreeRoam;
+            };
+
+            diaryUI.HandleUpdate(onBack);
+        }
         
     }
 
@@ -94,15 +107,32 @@ public class GameController : MonoBehaviour
     {
         if(selectedItem == 0)
         {
-            // Save
-            SavingSystem.i.Save("Saveslot_01");
+            // Diary
+            diaryUI.gameObject.SetActive(true);
+            state = GameState.Diary;
+            Debug.Log("Diary?");
         }
         else if(selectedItem == 1)
         {
+            // Save
+            SavingSystem.i.Save("Saveslot_01");
+            state = GameState.FreeRoam;
+        }
+        else if(selectedItem == 2)
+        {
             // Load
             SavingSystem.i.Load("Saveslot_01");
+            state = GameState.FreeRoam;
         }
-
-        state = GameState.FreeRoam;
+        else if(selectedItem == 3)
+        {
+            // Options
+            state = GameState.FreeRoam;
+        }
+        else if(selectedItem == 4)
+        {
+            // Quit
+            state = GameState.FreeRoam;
+        }
     }
 }
