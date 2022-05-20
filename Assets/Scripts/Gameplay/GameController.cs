@@ -85,7 +85,6 @@ public class GameController : MonoBehaviour
         }
         else if(state == GameState.Diary)
         {
-            Debug.Log("Ma ci entri?");
             Action onBack = () =>
             {
                 diaryUI.gameObject.SetActive(false);
@@ -110,7 +109,6 @@ public class GameController : MonoBehaviour
             // Diary
             diaryUI.gameObject.SetActive(true);
             state = GameState.Diary;
-            Debug.Log("Diary?");
         }
         else if(selectedItem == 1)
         {
