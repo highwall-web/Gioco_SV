@@ -7,7 +7,16 @@ public class ItemSlotUI : MonoBehaviour
 {
     [SerializeField] Text nameText;
 
+    RectTransform rectTransform;
+
+    private void Awake()
+    {
+        rectTransform = GetComponent<RectTransform>();
+    }
+
     public Text Name => nameText;
+
+    public float Height => rectTransform.rect.height;
 
     public void SetData(ItemBase itemBase)
     {
