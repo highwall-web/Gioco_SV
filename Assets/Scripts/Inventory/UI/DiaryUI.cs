@@ -45,7 +45,7 @@ public class DiaryUI : MonoBehaviour
             Destroy(child.gameObject);
         }
         slotUIList = new List<ItemSlotUI>();
-        foreach (var itemSlot in diary.Items)
+        foreach (var itemSlot in diary.GetItems())
         {
             var slotUIObj = Instantiate(itemSlotUI, itemList.transform);
             slotUIObj.SetData(itemSlot);
@@ -68,7 +68,7 @@ public class DiaryUI : MonoBehaviour
             --selectedItem;
         }
 
-        selectedItem = Mathf.Clamp(selectedItem, 0, diary.Items.Count - 1);
+        selectedItem = Mathf.Clamp(selectedItem, 0, diary.GetItems().Count - 1);
 
         if (prevSelection != selectedItem)
         {
@@ -93,7 +93,7 @@ public class DiaryUI : MonoBehaviour
                 slotUIList[i].Name.color = textColor;
             }
 
-            var slot = diary.Items[selectedItem];
+            var slot = diary.GetItems()[selectedItem];
             itemIcon.sprite = slot.Icon;
             itemDescription.text = slot.Description;
 

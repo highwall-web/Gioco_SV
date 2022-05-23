@@ -25,11 +25,36 @@ public class DialogManager : MonoBehaviour
 
     public bool IsShowing { get; private set; }
 
+    internal IEnumerator ShowDialogText(string text, bool waitForInput = true, bool autoClose = true)
+    {
+        OnShowDialog?.Invoke();
+        IsShowing = true;
+        dialogBox.SetActive(true);
+
+        yield return TypeDialog(text);
+        if(waitForInput)
+        {
+            yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
+        }
+
+        if (autoClose)
+        {
+            CloseDialog();
+        }
+    }
+
+    public void CloseDialog()
+    {
+        OnCloseDialog?.Invoke();
+        dialogBox.SetActive(false);
+        IsShowing = false;
+    }
+
     public IEnumerator ShowDialog(Dialog dialog)
     {
         yield return new WaitForEndOfFrame();
 
-        OnShowDialog.Invoke();
+        OnShowDialog?.Invoke();
 
         IsShowing = true;
         dialogBox.SetActive(true);
