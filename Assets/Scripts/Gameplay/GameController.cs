@@ -1,9 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Dialog, Menu, Diary, Paused}
+public enum GameState { FreeRoam, Dialog, Menu, Diary, Paused }
 
 public class GameController : MonoBehaviour
 {
@@ -28,6 +26,7 @@ public class GameController : MonoBehaviour
 
         menuController = GetComponent<MenuController>();
 
+        ItemsDB.Init();
         /*Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;*/
     }
@@ -39,13 +38,13 @@ public class GameController : MonoBehaviour
             prevState = state;
             state = GameState.Dialog;
         };
-        DialogManager.Instance.OnCloseDialog += () =>
+        DialogManager.Instance.OnDialogFinished += () =>
         {
-            if( state == GameState.Dialog)
+            if (state == GameState.Dialog)
             {
                 state = prevState;
             }
-                
+
         };
 
         menuController.onBack += () =>
@@ -75,21 +74,21 @@ public class GameController : MonoBehaviour
         {
             playerController.HandleUpdate();
 
-            if(Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 menuController.OpenMenu();
                 state = GameState.Menu;
             }
         }
-        else if(state == GameState.Dialog)
+        else if (state == GameState.Dialog)
         {
             DialogManager.Instance.HandleUpdate();
         }
-        else if(state == GameState.Menu)
+        else if (state == GameState.Menu)
         {
             menuController.HandleUpdate();
         }
-        else if(state == GameState.Diary)
+        else if (state == GameState.Diary)
         {
             Action onBack = () =>
             {
@@ -99,7 +98,7 @@ public class GameController : MonoBehaviour
 
             diaryUI.HandleUpdate(onBack);
         }
-        
+
     }
 
     public void SetCurrentScene(SceneDetails currScene)
@@ -110,30 +109,30 @@ public class GameController : MonoBehaviour
 
     void OnMenuSelected(int selectedItem)
     {
-        if(selectedItem == 0)
+        if (selectedItem == 0)
         {
             // Diary
             diaryUI.gameObject.SetActive(true);
             state = GameState.Diary;
         }
-        else if(selectedItem == 1)
+        else if (selectedItem == 1)
         {
             // Save
             SavingSystem.i.Save("Saveslot_01");
             state = GameState.FreeRoam;
         }
-        else if(selectedItem == 2)
+        else if (selectedItem == 2)
         {
             // Load
             SavingSystem.i.Load("Saveslot_01");
             state = GameState.FreeRoam;
         }
-        else if(selectedItem == 3)
+        else if (selectedItem == 3)
         {
             // Options
             state = GameState.FreeRoam;
         }
-        else if(selectedItem == 4)
+        else if (selectedItem == 4)
         {
             // Quit
             state = GameState.FreeRoam;

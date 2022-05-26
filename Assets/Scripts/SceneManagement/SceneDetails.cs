@@ -13,7 +13,6 @@ public class SceneDetails : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Debug.Log($"Entered {gameObject.name}");
 
             LoadScene();
             GameController.Instance.SetCurrentScene(this);

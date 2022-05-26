@@ -32,12 +32,12 @@ public class DiaryUI : MonoBehaviour
         itemListRect = itemList.GetComponent<RectTransform>();
     }
 
-    private void Start()
+    private void Update()
     {
         UpdateItemList();
     }
 
-    void UpdateItemList()
+    public void UpdateItemList()
     {
         //clear all existing items
         foreach (Transform child in itemList.transform)
