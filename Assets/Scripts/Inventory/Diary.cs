@@ -55,4 +55,9 @@ public class Diary : MonoBehaviour, ISavable
         }
         
     }
+
+    public bool HasItem(ItemBase item)
+    {
+        return items.Exists(slot => slot == item);
+    }
 }
