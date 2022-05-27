@@ -154,9 +154,9 @@ MonoBehaviour:
     lines:
     - ciao sono mauro
     - scopatemi
-  movementPattern:
-  - {x: -4, y: 0}
-  - {x: 4, y: 0}
+  questToStart: {fileID: 0}
+  questToComplete: {fileID: 0}
+  movementPattern: []
   timeBetweenPattern: 2
 --- !u!114 &4695299321964686344
 MonoBehaviour:

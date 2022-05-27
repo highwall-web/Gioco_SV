@@ -51,7 +51,7 @@ public class Diary : MonoBehaviour, ISavable
         for (int i = 0; i < ((List<string>)state).Count; i++)
         {
             
-            items.Add(ItemsDB.GetItemByName(((List<string>)state)[i]));
+            items.Add(ItemsDB.GetObjectByName(((List<string>)state)[i]));
         }
         
     }

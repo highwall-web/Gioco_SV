@@ -27,6 +27,7 @@ public class GameController : MonoBehaviour
         menuController = GetComponent<MenuController>();
 
         ItemsDB.Init();
+        QuestDB.Init();
         /*Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;*/
     }
