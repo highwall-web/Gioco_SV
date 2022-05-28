@@ -74,7 +74,13 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             }
             else
             {
-                yield return DialogManager.Instance.ShowDialog(dialog);
+                int selectedChoice = 0;
+                yield return DialogManager.Instance.ShowDialog(dialog, new List<string>() { "Yes", "No"},
+                    (choiceIndex) => selectedChoice = choiceIndex);
+                if(selectedChoice == 0 || selectedChoice == 1)
+                {
+                    yield return DialogManager.Instance.ShowDialogText("suca");
+                }
             }
 
             idleTimer = 0f;
