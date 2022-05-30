@@ -865,6 +865,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7704837076320612062, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: m_Volume
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704837076320612062, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8208250346062528566, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1118,6 +1126,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: ab3efca3102e7514b965fad9cfefff96, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: connectedScenes.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1194,6 +1206,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 018c41bbe042ece4ab0529c2815ffe6d, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: connectedScenes.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -1262,6 +1278,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: ab3efca3102e7514b965fad9cfefff96, type: 3}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: connectedScenes.Array.size
       value: 2
