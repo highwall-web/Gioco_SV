@@ -56,6 +56,8 @@ public class Quest
         {
             diary.AddItem(Base.RewardItems);
 
+            AudioManager.i.PlaySfx(AudioID.ItemObtained, pauseMusic: true);
+
             yield return DialogManager.Instance.ShowDialogText($"Hai ricevuto {Base.RewardItems.Name}!");
         }
 

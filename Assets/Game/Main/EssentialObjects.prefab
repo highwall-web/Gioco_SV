@@ -477,8 +477,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db4b8a48dd794e34684f648f4bf16ee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sfxList:
+  - id: 0
+    clip: {fileID: 8300000, guid: d87c65fe8bbeb7e48ac3e2b3ff91ccda, type: 3}
+  - id: 1
+    clip: {fileID: 8300000, guid: 49bd22933d272304fba8ad43bbd01aa9, type: 3}
   musicPlayer: {fileID: 7704837076320612062}
   sfxPlayer: {fileID: 3922146266441041299}
+  fadeDuration: 0.75
 --- !u!1 &4772855722960186351
 GameObject:
   m_ObjectHideFlags: 0

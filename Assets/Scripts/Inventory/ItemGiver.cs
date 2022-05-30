@@ -17,6 +17,8 @@ public class ItemGiver : MonoBehaviour, ISavable
 
         used = true;
 
+        AudioManager.i.PlaySfx(AudioID.ItemObtained, pauseMusic: true);
+
         yield return DialogManager.Instance.ShowDialogText($"Hai ricevuto {item.Name}");
     }
 
