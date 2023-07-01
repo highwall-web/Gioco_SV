@@ -18,7 +18,7 @@ public class SwapCharacter : MonoBehaviour, ISavable
         character = playerController.GetComponent<Character>();
         characterAnimator = GetComponent<CharacterAnimator>();
         // Initializes the position of the other era
-        loadPosition = new Vector3(8.50f, 0.50f); // Posizione momentanea fin quando non c'è l'altra era
+        loadPosition = new Vector3(45.50f, 0.50f);
     }
 
     // Update is called once per frame
