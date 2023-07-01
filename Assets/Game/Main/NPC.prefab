@@ -108,6 +108,12 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -122,6 +128,25 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -183,26 +208,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57fa80ab9b2ea564087ede6b191277a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkDownSprites:
+  isNPC: 1
+  walkDownSprites_Mor: []
+  walkUpSprites_Mor: []
+  walkRightSprites_Mor: []
+  walkLeftSprites_Mor: []
+  walkDownSprites_Istera: []
+  walkUpSprites_Istera: []
+  walkRightSprites_Istera: []
+  walkLeftSprites_Istera: []
+  walkDownSprites_NPC:
   - {fileID: 8224124334607301300, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
   - {fileID: 7946739453343321082, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
   - {fileID: 8224124334607301300, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
   - {fileID: 3479983707309357564, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  walkUpSprites:
+  walkUpSprites_NPC:
   - {fileID: 1570663829722904693, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
   - {fileID: 9107384998687645479, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
   - {fileID: 1570663829722904693, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
   - {fileID: 6449815590937797590, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  walkRightSprites:
+  walkRightSprites_NPC:
   - {fileID: 2382069247244199071, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
   - {fileID: 2895964165295529831, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
   - {fileID: 2382069247244199071, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
   - {fileID: 9104650670479662651, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  walkLeftSprites:
+  walkLeftSprites_NPC:
   - {fileID: 8357293588786038174, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
   - {fileID: -1588707430369709868, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
   - {fileID: 8357293588786038174, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
   - {fileID: 1269323359398250663, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+  walkDownSprites_actual: []
+  walkUpSprites_actual: []
+  walkRightSprites_actual: []
+  walkLeftSprites_actual: []
 --- !u!114 &1292696842869578784
 MonoBehaviour:
   m_ObjectHideFlags: 0
