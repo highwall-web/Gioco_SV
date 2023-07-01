@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b0db470c3d166da4faf811050a470b0e
+guid: b9016ae8fc57c474cb9356a4fd889b6b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: casa_new_0
+      name: all_guard_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a7652eef3f13244ebe914ad0f447fbe
-      internalID: 1614888808
+      spriteID: a6a1134945f18854f9ee066ede795992
+      internalID: -142387520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: casa_new_1
+      name: all_guard_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea9581efdc691f047a48988ce0823d9f
-      internalID: -762407146
+      spriteID: 6c839a9441ec8794f93375315705daba
+      internalID: 732716956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: casa_new_2
+      name: all_guard_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,14 +179,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73da55247f5b05245bcd0f5f29594094
-      internalID: 193371127
+      spriteID: 6cfbfabd1ca2bad4aaf132752e37d6b1
+      internalID: 709645303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: casa_new_3
+      name: all_guard_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e05f288cf3d7443ab3b2caf3a63631
+      internalID: 1410715372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_guard_4
       rect:
         serializedVersion: 2
         x: 0
@@ -200,35 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6be5e3419735bab488c53721bcdddb8e
-      internalID: -372427460
+      spriteID: a99eb274b378a2b4db584ea244f2f4e7
+      internalID: 205746316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: casa_new_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5def03357c981044fa16b3fde601ad93
-      internalID: 1832327059
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: casa_new_5
+      name: all_guard_5
       rect:
         serializedVersion: 2
         x: 64
@@ -242,14 +242,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e04cca89bf00a7641b7e7863e4f6b272
-      internalID: 1907143350
+      spriteID: be591c1c5c429a44880d9702393c5256
+      internalID: 590261937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: casa_new_6
+      name: all_guard_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7e20364fbb8f24584ceea2db85cdad
+      internalID: 519823987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: all_guard_7
       rect:
         serializedVersion: 2
         x: 0
@@ -263,14 +284,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a81600167a4640749a85e2e74a0fd5d3
-      internalID: 2111494412
+      spriteID: 9bee363896d71ec4f8dae09eaf64419f
+      internalID: -2092569587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: casa_new_7
+      name: all_guard_8
       rect:
         serializedVersion: 2
         x: 32
@@ -284,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c57349e66612134d8e07b52ef097c1e
-      internalID: 1955487424
+      spriteID: 8815361a313ced240ba6f9972fd6bc90
+      internalID: -986914511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: casa_new_8
+      name: all_guard_9
       rect:
         serializedVersion: 2
         x: 64
@@ -305,71 +326,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03a0feee067756346b7b58f6dcb1a690
-      internalID: -569727517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: casa_new_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 297ca5ec8d32e884eb3e1477abf9c541
-      internalID: 1350296478
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: casa_new_10
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7edb022c5c190747ac6210048eab83a
-      internalID: -1988865424
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: casa_new_11
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca36752fbfa23bc4a9c43a6c7ff2714c
-      internalID: -1290937606
+      spriteID: bfcd73d1b17964740a245d65f067952c
+      internalID: 2000558315
       vertices: []
       indices: 
       edges: []
@@ -385,18 +343,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      casa_new_0: 1614888808
-      casa_new_1: -762407146
-      casa_new_10: -1988865424
-      casa_new_11: -1290937606
-      casa_new_2: 193371127
-      casa_new_3: -372427460
-      casa_new_4: 1832327059
-      casa_new_5: 1907143350
-      casa_new_6: 2111494412
-      casa_new_7: 1955487424
-      casa_new_8: -569727517
-      casa_new_9: 1350296478
+      all_guard_0: -142387520
+      all_guard_1: 732716956
+      all_guard_2: 709645303
+      all_guard_3: 1410715372
+      all_guard_4: 205746316
+      all_guard_5: 590261937
+      all_guard_6: 519823987
+      all_guard_7: -2092569587
+      all_guard_8: -986914511
+      all_guard_9: 2000558315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

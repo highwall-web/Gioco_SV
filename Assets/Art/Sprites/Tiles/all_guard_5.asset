@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: casa_new_3
+  m_Name: all_guard_5
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -372427460, guid: b0db470c3d166da4faf811050a470b0e, type: 3}
+  m_Sprite: {fileID: 590261937, guid: b9016ae8fc57c474cb9356a4fd889b6b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
