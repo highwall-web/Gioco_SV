@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -139,6 +139,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 487971022105293702, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
@@ -273,6 +274,166 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Mor.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Mor.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Mor.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Mor.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Istera.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Mor.Array.data[0]
+      value: 
+      objectReference: {fileID: -3322372909695903127, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Mor.Array.data[1]
+      value: 
+      objectReference: {fileID: -87215447566848377, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Mor.Array.data[2]
+      value: 
+      objectReference: {fileID: -3322372909695903127, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Mor.Array.data[3]
+      value: 
+      objectReference: {fileID: -7825651945970831282, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Istera.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Mor.Array.data[0]
+      value: 
+      objectReference: {fileID: -4837632671368790554, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Mor.Array.data[1]
+      value: 
+      objectReference: {fileID: 7782033999917374813, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Mor.Array.data[2]
+      value: 
+      objectReference: {fileID: -4837632671368790554, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Mor.Array.data[3]
+      value: 
+      objectReference: {fileID: 5546248224229531270, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Istera.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Mor.Array.data[0]
+      value: 
+      objectReference: {fileID: -912369185989275168, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Mor.Array.data[1]
+      value: 
+      objectReference: {fileID: -7622006506580712996, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Mor.Array.data[2]
+      value: 
+      objectReference: {fileID: -912369185989275168, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Mor.Array.data[3]
+      value: 
+      objectReference: {fileID: 6033779094522569649, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Istera.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Mor.Array.data[0]
+      value: 
+      objectReference: {fileID: -1606860091371455807, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Mor.Array.data[1]
+      value: 
+      objectReference: {fileID: 2253808780266436220, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Mor.Array.data[2]
+      value: 
+      objectReference: {fileID: -1606860091371455807, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Mor.Array.data[3]
+      value: 
+      objectReference: {fileID: 3366940546938814407, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Istera.Array.data[0]
+      value: 
+      objectReference: {fileID: -682899055, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Istera.Array.data[1]
+      value: 
+      objectReference: {fileID: 2013277715, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Istera.Array.data[2]
+      value: 
+      objectReference: {fileID: -682899055, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Istera.Array.data[3]
+      value: 
+      objectReference: {fileID: 1394179342, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Istera.Array.data[0]
+      value: 
+      objectReference: {fileID: -2068429710, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Istera.Array.data[1]
+      value: 
+      objectReference: {fileID: -769526583, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Istera.Array.data[2]
+      value: 
+      objectReference: {fileID: -2068429710, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Istera.Array.data[3]
+      value: 
+      objectReference: {fileID: -390801018, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Istera.Array.data[0]
+      value: 
+      objectReference: {fileID: 912062530, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Istera.Array.data[1]
+      value: 
+      objectReference: {fileID: -950634495, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Istera.Array.data[2]
+      value: 
+      objectReference: {fileID: 912062530, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Istera.Array.data[3]
+      value: 
+      objectReference: {fileID: -1716532888, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Istera.Array.data[0]
+      value: 
+      objectReference: {fileID: -789162604, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Istera.Array.data[1]
+      value: 
+      objectReference: {fileID: -1867731249, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Istera.Array.data[2]
+      value: 
+      objectReference: {fileID: -789162604, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Istera.Array.data[3]
+      value: 
+      objectReference: {fileID: 1811475630, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
     - target: {fileID: 1153971341275499780, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -337,6 +498,246 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Mor.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Mor.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Mor.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Mor.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Istera.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Mor.Array.data[0]
+      value: 
+      objectReference: {fileID: -3322372909695903127, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Mor.Array.data[1]
+      value: 
+      objectReference: {fileID: -87215447566848377, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Mor.Array.data[2]
+      value: 
+      objectReference: {fileID: -3322372909695903127, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Mor.Array.data[3]
+      value: 
+      objectReference: {fileID: -7825651945970831282, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1570663829722904693, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 9107384998687645479, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1570663829722904693, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 6449815590937797590, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Istera.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Mor.Array.data[0]
+      value: 
+      objectReference: {fileID: -4837632671368790554, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Mor.Array.data[1]
+      value: 
+      objectReference: {fileID: 7782033999917374813, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Mor.Array.data[2]
+      value: 
+      objectReference: {fileID: -4837632671368790554, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Mor.Array.data[3]
+      value: 
+      objectReference: {fileID: 5546248224229531270, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 8224124334607301300, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 7946739453343321082, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 8224124334607301300, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 3479983707309357564, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Istera.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Mor.Array.data[0]
+      value: 
+      objectReference: {fileID: -912369185989275168, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Mor.Array.data[1]
+      value: 
+      objectReference: {fileID: -7622006506580712996, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Mor.Array.data[2]
+      value: 
+      objectReference: {fileID: -912369185989275168, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Mor.Array.data[3]
+      value: 
+      objectReference: {fileID: 6033779094522569649, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 8357293588786038174, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1588707430369709868, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 8357293588786038174, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 1269323359398250663, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Istera.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Mor.Array.data[0]
+      value: 
+      objectReference: {fileID: -1606860091371455807, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Mor.Array.data[1]
+      value: 
+      objectReference: {fileID: 2253808780266436220, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Mor.Array.data[2]
+      value: 
+      objectReference: {fileID: -1606860091371455807, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Mor.Array.data[3]
+      value: 
+      objectReference: {fileID: 3366940546938814407, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 2382069247244199071, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 2895964165295529831, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 2382069247244199071, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 9104650670479662651, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Istera.Array.data[0]
+      value: 
+      objectReference: {fileID: -682899055, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Istera.Array.data[1]
+      value: 
+      objectReference: {fileID: 2013277715, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Istera.Array.data[2]
+      value: 
+      objectReference: {fileID: -682899055, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkUpSprites_Istera.Array.data[3]
+      value: 
+      objectReference: {fileID: 1394179342, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Istera.Array.data[0]
+      value: 
+      objectReference: {fileID: -2068429710, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Istera.Array.data[1]
+      value: 
+      objectReference: {fileID: -769526583, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Istera.Array.data[2]
+      value: 
+      objectReference: {fileID: -2068429710, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkDownSprites_Istera.Array.data[3]
+      value: 
+      objectReference: {fileID: -390801018, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Istera.Array.data[0]
+      value: 
+      objectReference: {fileID: 912062530, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Istera.Array.data[1]
+      value: 
+      objectReference: {fileID: -950634495, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Istera.Array.data[2]
+      value: 
+      objectReference: {fileID: 912062530, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkLeftSprites_Istera.Array.data[3]
+      value: 
+      objectReference: {fileID: -1716532888, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Istera.Array.data[0]
+      value: 
+      objectReference: {fileID: -789162604, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Istera.Array.data[1]
+      value: 
+      objectReference: {fileID: -1867731249, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Istera.Array.data[2]
+      value: 
+      objectReference: {fileID: -789162604, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: walkRightSprites_Istera.Array.data[3]
+      value: 
+      objectReference: {fileID: 1811475630, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
     - target: {fileID: 1870692559931971286, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: choiceBox
       value: 
@@ -946,6 +1347,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1870692559931971280, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 856332896}
   m_SourcePrefab: {fileID: 100100000, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
 --- !u!114 &442119686 stripped
 MonoBehaviour:
@@ -991,6 +1398,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
@@ -1062,6 +1470,9 @@ PrefabInstance:
       value: House
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
 --- !u!114 &1696381792 stripped
 MonoBehaviour:
@@ -1079,6 +1490,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
@@ -1150,6 +1562,9 @@ PrefabInstance:
       value: Town2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
 --- !u!114 &2014164823 stripped
 MonoBehaviour:
@@ -1167,6 +1582,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
@@ -1242,12 +1658,16 @@ PrefabInstance:
       value: Route1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
 --- !u!1001 &6506996021338457571
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
@@ -1323,4 +1743,7 @@ PrefabInstance:
       value: MainVillage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}

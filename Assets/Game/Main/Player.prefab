@@ -47,9 +47,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -102,6 +110,7 @@ GameObject:
   - component: {fileID: 6552181369178660963}
   - component: {fileID: 6302185692338507168}
   - component: {fileID: 139906831840099416}
+  - component: {fileID: 7957332678000972806}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -123,7 +132,7 @@ Transform:
   m_Children:
   - {fileID: 8670205689498267455}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8670205689940356296
 SpriteRenderer:
@@ -201,26 +210,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57fa80ab9b2ea564087ede6b191277a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkDownSprites:
-  - {fileID: -4837632671368790554, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  - {fileID: 7782033999917374813, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  - {fileID: -4837632671368790554, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  - {fileID: 5546248224229531270, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  walkUpSprites:
-  - {fileID: -3322372909695903127, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  - {fileID: -87215447566848377, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  - {fileID: -3322372909695903127, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  - {fileID: -7825651945970831282, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  walkRightSprites:
-  - {fileID: -1606860091371455807, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  - {fileID: 2253808780266436220, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  - {fileID: -1606860091371455807, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  - {fileID: 3366940546938814407, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  walkLeftSprites:
-  - {fileID: -912369185989275168, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  - {fileID: -7622006506580712996, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  - {fileID: -912369185989275168, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
-  - {fileID: 6033779094522569649, guid: f9a21c7164f775346a5df2dd9d70b0cd, type: 3}
+  isNPC: 0
+  walkDownSprites_Mor: []
+  walkUpSprites_Mor: []
+  walkRightSprites_Mor: []
+  walkLeftSprites_Mor: []
+  walkDownSprites_Istera: []
+  walkUpSprites_Istera: []
+  walkRightSprites_Istera: []
+  walkLeftSprites_Istera: []
+  walkDownSprites_NPC: []
+  walkUpSprites_NPC: []
+  walkRightSprites_NPC: []
+  walkLeftSprites_NPC: []
+  walkDownSprites_actual: []
+  walkUpSprites_actual: []
+  walkRightSprites_actual: []
+  walkLeftSprites_actual: []
 --- !u!114 &8670205689940356293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +257,12 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -265,6 +277,25 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -317,5 +348,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca5a42152b0586041a778a81b13667b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7957332678000972806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8670205689940356298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d2dae0d82846641ab8b692fa2e2982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
