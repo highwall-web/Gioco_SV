@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CastleRoute.unity
     guid: 7c5b3ba974e23134583deba940c6078e
+  - enabled: 1
+    path: Assets/Scenes/LaboratoryRoute.unity
+    guid: 0838535511fcb0e43a6540c0be6aa778
+  - enabled: 1
+    path: Assets/Scenes/Laboratory.unity
+    guid: 430fa390ac7211e43b8ee4c9606f5432
   m_configObjects: {}
