@@ -217,26 +217,10 @@ MonoBehaviour:
   walkUpSprites_Istera: []
   walkRightSprites_Istera: []
   walkLeftSprites_Istera: []
-  walkDownSprites_NPC:
-  - {fileID: 8224124334607301300, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  - {fileID: 7946739453343321082, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  - {fileID: 8224124334607301300, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  - {fileID: 3479983707309357564, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  walkUpSprites_NPC:
-  - {fileID: 1570663829722904693, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  - {fileID: 9107384998687645479, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  - {fileID: 1570663829722904693, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  - {fileID: 6449815590937797590, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  walkRightSprites_NPC:
-  - {fileID: 2382069247244199071, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  - {fileID: 2895964165295529831, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  - {fileID: 2382069247244199071, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  - {fileID: 9104650670479662651, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  walkLeftSprites_NPC:
-  - {fileID: 8357293588786038174, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  - {fileID: -1588707430369709868, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  - {fileID: 8357293588786038174, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
-  - {fileID: 1269323359398250663, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
+  walkDownSprites_NPC: []
+  walkUpSprites_NPC: []
+  walkRightSprites_NPC: []
+  walkLeftSprites_NPC: []
   walkDownSprites_actual: []
   walkUpSprites_actual: []
   walkRightSprites_actual: []

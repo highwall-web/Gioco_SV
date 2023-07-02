@@ -157,10 +157,6 @@ public class CharacterAnimator : MonoBehaviour, ISavable
         if (!isNPC)
         {
             currentAnim = walkDownAnim;
-            if (actual == 0)
-                print("IN ANIM - Mor");
-            else
-                print("IN ANIM - Istera");
             actualCharacter = actual;
         }
     }

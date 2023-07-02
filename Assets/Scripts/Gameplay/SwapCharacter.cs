@@ -5,6 +5,8 @@ using UnityEngine;
 public class SwapCharacter : MonoBehaviour, ISavable
 {
     private Vector3 savePosition, loadPosition;
+    public GameController gameController;
+    private DialogManager dialogManager;
     private PlayerController playerController;
     private Character character;
     private CharacterAnimator characterAnimator;
@@ -14,6 +16,7 @@ public class SwapCharacter : MonoBehaviour, ISavable
     void Start()
     {
         actualCharacter = 0;
+        dialogManager = gameController.GetComponent<DialogManager>();
         playerController = GetComponent<PlayerController>();
         character = playerController.GetComponent<Character>();
         characterAnimator = GetComponent<CharacterAnimator>();
@@ -24,7 +27,7 @@ public class SwapCharacter : MonoBehaviour, ISavable
     // Update is called once per frame
     void Update()
     {
-        if (!character.IsMoving)
+        if (!character.IsMoving && !dialogManager.IsShowing)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {

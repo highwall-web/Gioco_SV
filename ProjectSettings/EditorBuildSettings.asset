@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Town2.unity
     guid: de4555af7eb6b69419f8cc33c43bbca4
+  - enabled: 1
+    path: Assets/Scenes/Castle.unity
+    guid: 7dddb58f202516e4ca2d1956278b43f1
+  - enabled: 1
+    path: Assets/Scenes/CastleRoute.unity
+    guid: 7c5b3ba974e23134583deba940c6078e
   m_configObjects: {}
