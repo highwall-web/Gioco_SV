@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: FirstQuest
   m_EditorClassIdentifier: 
   objName: FirstQuest
-  description: Ma che cazzo ne so
+  description: Prima quest
   startDialogue:
     lines:
-    - Dio can
-    - Portami una cozza
+    - '"Per strada ho perso una pagina,'
+    - dovrebbe essere ancora in citta',
+    - potresti cercarla per me?"
   inProgressDialogue:
     lines:
     - La cozza la hai nel culo
