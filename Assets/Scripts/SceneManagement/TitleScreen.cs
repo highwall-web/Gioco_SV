@@ -6,11 +6,21 @@ using UnityEngine.UI;
 
 public class TitleScreen : MonoBehaviour
 {
+    public GameObject fader2;
+    [SerializeField]public Fader fader;
+    public float faderDuration = 0.5f;
+    IEnumerator SwitchScene()
+    {
+        fader2.SetActive(true);
+        yield return fader.FadeIn(faderDuration);
+        yield return SceneManager.LoadSceneAsync("Gameplay");
+        fader2.SetActive(false);
+    }
 
     public void StartGame(){
         //Azioni da eseguire per iniziare il gioco
         //Carica la scena seguente
-        SceneManager.LoadScene("Gameplay");
+        StartCoroutine("SwitchScene");
     }
 
     public void QuitGame(){
