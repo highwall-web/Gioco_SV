@@ -1,5 +1,17 @@
 {
   "dependencies": {
+    "com.binarycharm.common": {
+      "version": "file:com.binarycharm.common",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "com.binarycharm.samples.ui": {
+      "version": "file:com.binarycharm.samples.ui",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.2d.animation": {
       "version": "9.0.3",
       "depth": 0,
