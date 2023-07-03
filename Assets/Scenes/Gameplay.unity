@@ -598,6 +598,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1686050300597273859, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1870692558764605587, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: walkUpSprites_Mor.Array.size
       value: 4
@@ -838,6 +842,10 @@ PrefabInstance:
       propertyPath: walkRightSprites_Istera.Array.data[3]
       value: 
       objectReference: {fileID: 1811475630, guid: 63eed1e6849d0ff49abc4eddd6a081be, type: 3}
+    - target: {fileID: 1870692558896418308, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1870692559931971286, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: choiceBox
       value: 
@@ -970,6 +978,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3040967900637554735, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3051112950755419055, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1011,6 +1023,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3068739195449727370, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3363043924423932788, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
