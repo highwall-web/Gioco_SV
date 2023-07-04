@@ -2257,7 +2257,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 8c3d6f5a67a750b44915d4f681b29ec8, type: 3}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: connectedScenes.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: connectedScenes.Array.data[0]
@@ -2267,6 +2267,10 @@ PrefabInstance:
       propertyPath: connectedScenes.Array.data[1]
       value: 
       objectReference: {fileID: 68897223}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: connectedScenes.Array.data[2]
+      value: 
+      objectReference: {fileID: 958627531}
     - target: {fileID: 6506996019699149020, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: m_Name
       value: CastleRoute
