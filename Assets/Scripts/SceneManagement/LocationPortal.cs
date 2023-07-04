@@ -24,6 +24,7 @@ public class LocationPortal : MonoBehaviour, IPlayerTriggerable
 
     IEnumerator Teleport()
     {
+        player.IsTeleporting = true;
         player.Character.Animator.IsMoving = false;
         GameController.Instance.PauseGame(true);
         yield return fader.FadeIn(0.5f);
@@ -34,6 +35,7 @@ public class LocationPortal : MonoBehaviour, IPlayerTriggerable
         player.Character.Animator.IsMoving = false;
         yield return fader.FadeOut(0.5f);
         GameController.Instance.PauseGame(false);
+        player.IsTeleporting = false;
     }
 
     public Transform SpawnPoint => spawnPoint;

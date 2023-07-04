@@ -15,13 +15,13 @@ MonoBehaviour:
   objName: UnlockPath
   description: Sblocca la via
   startDialogue:
-    lines:
-    - "\"Vuole andare nell'altra citt\xE0?"
-    - Certo, faccia pure!
-    - Ha fatto bene ad avvisarmi."
+    lines: []
   inProgressDialogue:
     lines: []
   completedDialogue:
-    lines: []
+    lines:
+    - '"Vuole andare nell''altra citta''?'
+    - Certo, faccia pure!
+    - Ha fatto bene ad avvisarmi."
   requiredItem: {fileID: 0}
   rewardItem: {fileID: 0}

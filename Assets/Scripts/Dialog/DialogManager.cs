@@ -14,9 +14,18 @@ public class DialogManager : MonoBehaviour
     public event Action OnShowDialog;
     public event Action OnDialogFinished;
 
+    public GameObject player;
+    public Sprite dialogSpriteOld;
+    public Sprite dialogSpriteNew;
+    private SwapCharacter swapCharacter;
+    private int actualCharacter;
+
     public static DialogManager Instance { get; private set; }
 
-    
+    private void Start()
+    {
+        swapCharacter = player.GetComponent<SwapCharacter>();
+    }
 
     private void Awake()
     {
@@ -57,6 +66,18 @@ public class DialogManager : MonoBehaviour
         Action<int> onChoiceSelected = null)
     {
         yield return new WaitForEndOfFrame();
+
+        actualCharacter = swapCharacter.getActualCharacter();
+        if (actualCharacter == 0)
+        {
+            dialogBox.GetComponent<Image>().sprite = dialogSpriteOld;
+            choiceBox.GetComponent<Image>().sprite = dialogSpriteOld;
+        }
+        else
+        {
+            dialogBox.GetComponent<Image>().sprite = dialogSpriteNew;
+            choiceBox.GetComponent<Image>().sprite = dialogSpriteNew;
+        }
 
         OnShowDialog?.Invoke();
 

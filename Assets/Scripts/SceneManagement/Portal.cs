@@ -49,4 +49,5 @@ public class Portal : MonoBehaviour, IPlayerTriggerable
     public bool TriggerRepeatedly => false;
 }
 
-public enum DestinationIdentifier{ A, B, C, D }
+public enum DestinationIdentifier { BrownOld, RedOld, YellowOld, PurpleOld, GreenOld, BlueOld,
+                                    BrownNew, RedNew, YellowNew, PurpleNew, GreenNew, BlueNew }

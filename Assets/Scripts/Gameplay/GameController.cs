@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum GameState { FreeRoam, Dialog, Menu, Diary, Paused }
 
@@ -8,6 +9,9 @@ public class GameController : MonoBehaviour
 
     [SerializeField] PlayerController playerController;
     [SerializeField] DiaryUI diaryUI;
+    private SwapCharacter swapCharacter;
+    public Sprite dialogSpriteOld;
+    public Sprite dialogSpriteNew;
 
     GameState state;
     GameState prevState;
@@ -34,6 +38,8 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        swapCharacter = playerController.GetComponent<SwapCharacter>();
+
         DialogManager.Instance.OnShowDialog += () =>
         {
             prevState = state;
@@ -113,6 +119,14 @@ public class GameController : MonoBehaviour
         if (selectedItem == 0)
         {
             // Diary
+            if(swapCharacter.getActualCharacter() == 0)
+            {
+                diaryUI.GetComponent<Image>().sprite = dialogSpriteOld;
+            }
+            else
+            {
+                diaryUI.GetComponent<Image>().sprite = dialogSpriteNew;
+            }
             diaryUI.gameObject.SetActive(true);
             state = GameState.Diary;
         }

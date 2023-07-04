@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour, ISavable
 
     private Character character;
 
+    public bool IsTeleporting { get; set; }
+
     private void Awake()
     {
         character = GetComponent<Character>();

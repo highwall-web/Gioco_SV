@@ -7,6 +7,7 @@ public class SwapCharacter : MonoBehaviour, ISavable
     private Vector3 savePosition, loadPosition;
     public GameController gameController;
     private DialogManager dialogManager;
+    private MenuController menuController;
     private PlayerController playerController;
     private Character character;
     private CharacterAnimator characterAnimator;
@@ -17,6 +18,7 @@ public class SwapCharacter : MonoBehaviour, ISavable
     {
         actualCharacter = 0;
         dialogManager = gameController.GetComponent<DialogManager>();
+        menuController = gameController.GetComponent<MenuController>();
         playerController = GetComponent<PlayerController>();
         character = playerController.GetComponent<Character>();
         characterAnimator = GetComponent<CharacterAnimator>();
@@ -27,7 +29,7 @@ public class SwapCharacter : MonoBehaviour, ISavable
     // Update is called once per frame
     void Update()
     {
-        if (!character.IsMoving && !dialogManager.IsShowing)
+        if (!character.IsMoving && !dialogManager.IsShowing && !menuController.IsShowing && !playerController.IsTeleporting)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {

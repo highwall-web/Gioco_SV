@@ -26,7 +26,7 @@ public class SceneDetails : MonoBehaviour
                 scene.LoadScene();
             }
 
-            if(GameController.Instance.PrevScene != null)
+            if (GameController.Instance.PrevScene != null)
             {
                 var previouslyLoadedScenes = GameController.Instance.PrevScene.connectedScenes;
                 foreach (var scene in previouslyLoadedScenes)

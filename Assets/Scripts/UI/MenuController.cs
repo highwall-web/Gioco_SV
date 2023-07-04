@@ -11,6 +11,12 @@ public class MenuController : MonoBehaviour
     [SerializeField] Color highlightedColor;
     [SerializeField] Color textColor;
 
+    public GameObject player;
+    private SwapCharacter swapCharacter;
+    private int actualCharacter;
+    public Sprite dialogSpriteOld;
+    public Sprite dialogSpriteNew;
+
     public event Action<int> onMenuSelected;
     public event Action onBack;
 
@@ -18,13 +24,32 @@ public class MenuController : MonoBehaviour
 
     int selectedItem = 0;
 
+    private void Start()
+    {
+        swapCharacter = player.GetComponent<SwapCharacter>();
+    }
+
     private void Awake()
     {
         menuItems = menu.GetComponentsInChildren<Text>().ToList();
     }
 
+    public bool IsShowing { get; private set; }
+
     public void OpenMenu()
     {
+        actualCharacter = swapCharacter.getActualCharacter();
+
+        if (actualCharacter == 0)
+        {
+            menu.GetComponent<Image>().sprite = dialogSpriteOld;
+        }
+        else
+        {
+            menu.GetComponent<Image>().sprite = dialogSpriteNew;
+        }
+
+        IsShowing = true;
         menu.SetActive(true);
         UpdateItemSelection();
     }
@@ -32,6 +57,7 @@ public class MenuController : MonoBehaviour
     public void CloseMenu()
     {
         menu.SetActive(false);
+        IsShowing = false;
     }
 
     public void HandleUpdate()
