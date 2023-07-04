@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -184,9 +184,21 @@ PrefabInstance:
       value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 505205932}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: sceneMusic
       value: 
       objectReference: {fileID: 8300000, guid: ab3efca3102e7514b965fad9cfefff96, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic_New
+      value: 
+      objectReference: {fileID: 8300000, guid: 81955d5e6c214494685dada7c106fb37, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic_Old
+      value: 
+      objectReference: {fileID: 8300000, guid: 2730993a9143ec847ac6a4d112cb5fe5, type: 3}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: connectedScenes.Array.size
       value: 1
@@ -887,7 +899,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 9050227c2d140cc4c9968021287db6be, type: 3}
     - target: {fileID: 1870692560642804306, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1870692560642804306, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1653,124 +1665,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f1176d7359bc8d4d93f457d479fd5c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &538518300
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -24
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148962, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_Size.x
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148962, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_Size.y
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148962, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148962, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_Offset.y
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: connectedScenes.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: connectedScenes.Array.data[0]
-      value: 
-      objectReference: {fileID: 442119686}
-    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: notConnectedScenes.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: notConnectedScenes.Array.data[0]
-      value: 
-      objectReference: {fileID: 1412988291}
-    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: notConnectedScenes.Array.data[1]
-      value: 
-      objectReference: {fileID: 1774172870}
-    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: notConnectedScenes.Array.data[2]
-      value: 
-      objectReference: {fileID: 958627531}
-    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: notConnectedScenes.Array.data[3]
-      value: 
-      objectReference: {fileID: 336595558}
-    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: notConnectedScenes.Array.data[4]
-      value: 
-      objectReference: {fileID: 264894303}
-    - target: {fileID: 6506996019699149020, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-      propertyPath: m_Name
-      value: HouseRed
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
---- !u!114 &538518301 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
-  m_PrefabInstance: {fileID: 538518300}
+--- !u!1 &505205932 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1870692558764605599, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+  m_PrefabInstance: {fileID: 308121172}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &505205934 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+  m_PrefabInstance: {fileID: 308121172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505205932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f1176d7359bc8d4d93f457d479fd5c9, type: 3}
+  m_Script: {fileID: 11500000, guid: 00d2dae0d82846641ab8b692fa2e2982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &655527273 stripped
@@ -1828,6 +1736,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 22, y: 10}
   m_EdgeRadius: 0
+--- !u!1 &839976427 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6506996019699149020, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+  m_PrefabInstance: {fileID: 1682633934}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &855213249 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6506996019699149020, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
@@ -2153,7 +2066,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6506996019699148961, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2204,9 +2117,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 505205932}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: sceneMusic
       value: 
       objectReference: {fileID: 8300000, guid: ab3efca3102e7514b965fad9cfefff96, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic_New
+      value: 
+      objectReference: {fileID: 8300000, guid: 38c28def9abcd6f4290e426a6681b421, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic_Old
+      value: 
+      objectReference: {fileID: 8300000, guid: 8c3d6f5a67a750b44915d4f681b29ec8, type: 3}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: connectedScenes.Array.size
       value: 2
@@ -2244,12 +2169,57 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
   m_PrefabInstance: {fileID: 1682633934}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 839976427}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f1176d7359bc8d4d93f457d479fd5c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1412988294
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839976427}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -17.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8, y: 9}
+  m_EdgeRadius: 0
 --- !u!1001 &1682633934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2319,6 +2289,18 @@ PrefabInstance:
       value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 505205932}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic_New
+      value: 
+      objectReference: {fileID: 8300000, guid: 27ee28a18b351ed4ca34fb7c8038b4d6, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic_Old
+      value: 
+      objectReference: {fileID: 8300000, guid: 8f15d1ff1ce3d8b41a8ef4c5d5b75467, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: connectedScenes.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2361,7 +2343,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6506996019699149020, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 1412988294}
   m_SourcePrefab: {fileID: 100100000, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
 --- !u!114 &1696381792 stripped
 MonoBehaviour:
@@ -2651,9 +2636,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 505205932}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: sceneMusic
       value: 
       objectReference: {fileID: 8300000, guid: ab3efca3102e7514b965fad9cfefff96, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic_New
+      value: 
+      objectReference: {fileID: 8300000, guid: 81955d5e6c214494685dada7c106fb37, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic_Old
+      value: 
+      objectReference: {fileID: 8300000, guid: 2730993a9143ec847ac6a4d112cb5fe5, type: 3}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: connectedScenes.Array.size
       value: 2
@@ -2895,9 +2892,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 505205932}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: sceneMusic
       value: 
       objectReference: {fileID: 8300000, guid: 018c41bbe042ece4ab0529c2815ffe6d, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic_New
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b1ef4fd8634cf0448e01afa4a018965, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic_Old
+      value: 
+      objectReference: {fileID: 8300000, guid: 8c3d6f5a67a750b44915d4f681b29ec8, type: 3}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: connectedScenes.Array.size
       value: 2
@@ -2987,9 +2996,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 505205932}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: sceneMusic
       value: 
       objectReference: {fileID: 8300000, guid: ab3efca3102e7514b965fad9cfefff96, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: swapCharacter
+      value: 
+      objectReference: {fileID: 505205934}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic_New
+      value: 
+      objectReference: {fileID: 8300000, guid: 81955d5e6c214494685dada7c106fb37, type: 3}
+    - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
+      propertyPath: sceneMusic_Old
+      value: 
+      objectReference: {fileID: 8300000, guid: 2730993a9143ec847ac6a4d112cb5fe5, type: 3}
     - target: {fileID: 6506996019699148963, guid: 4df0decc6292ded46b590ddb5975cfd5, type: 3}
       propertyPath: connectedScenes.Array.size
       value: 8
