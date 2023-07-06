@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Important Buildings/Laboratory.unity
     guid: 430fa390ac7211e43b8ee4c9606f5432
+  - enabled: 1
+    path: Assets/Scenes/Important Buildings/InsideCastle.unity
+    guid: c71d47d427129a6469c29cd3c0d529ef
   m_configObjects: {}
