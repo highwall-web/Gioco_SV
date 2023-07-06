@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class NPCController : MonoBehaviour, Interactable, ISavable
 {
+    [Header("Dialog")]
     [SerializeField] Dialog dialog;
+    [SerializeField] bool hasChoiceBox = false;
+    [SerializeField] public List<string> choiceOptions;
 
     [Header("Quests")]
     [SerializeField] QuestBase questToStart;
@@ -74,13 +77,23 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             }
             else
             {
-                int selectedChoice = 0;
-                yield return DialogManager.Instance.ShowDialog(dialog, new List<string>() { "Yes", "No"},
-                    (choiceIndex) => selectedChoice = choiceIndex);
-                if(selectedChoice == 0 || selectedChoice == 1)
+                //gestisce il dialog dopo choice
+                if (hasChoiceBox)
                 {
-                    yield return DialogManager.Instance.ShowDialogText("suca");
+                    int selectedChoice = 0;
+                    yield return DialogManager.Instance.ShowDialog(dialog, choiceOptions,
+                        (choiceIndex) => selectedChoice = choiceIndex);
+                    // Gestisce l'opzione selezionata
+                    if(selectedChoice == 0)
+                    {
+                        yield return DialogManager.Instance.ShowDialogText("suca");
+                    }else{
+                        yield return DialogManager.Instance.ShowDialogText("tocca");
+                    }
+                }else{
+                    yield return DialogManager.Instance.ShowDialog(dialog);
                 }
+                
             }
 
             idleTimer = 0f;
