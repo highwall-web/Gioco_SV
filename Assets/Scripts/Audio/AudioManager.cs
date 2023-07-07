@@ -89,7 +89,7 @@ public class AudioManager : MonoBehaviour
     }
 }
 
-public enum AudioID {  UISelect, ItemObtained }
+public enum AudioID {  UISelect, ItemObtained, FirstThunder, ThunderHit }
 
 [System.Serializable]
 public class AudioData

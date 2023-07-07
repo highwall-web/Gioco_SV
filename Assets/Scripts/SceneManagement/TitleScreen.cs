@@ -13,8 +13,7 @@ public class TitleScreen : MonoBehaviour
     {
         fader2.SetActive(true);
         yield return fader.FadeIn(faderDuration);
-        yield return SceneManager.LoadSceneAsync("Gameplay");
-        fader2.SetActive(false);
+        yield return SceneManager.LoadSceneAsync("Introduction");
     }
 
     public void StartGame(){
