@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Page1
   m_EditorClassIdentifier: 
   objName: First Page
-  description: Object
+  description: Prima pagina
   icon: {fileID: 21300000, guid: bd0724e4b8cae7445a056b934cce45ab, type: 3}

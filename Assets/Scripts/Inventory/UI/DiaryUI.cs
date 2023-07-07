@@ -30,6 +30,8 @@ public class DiaryUI : MonoBehaviour
     {
         diary = Diary.GetDiary();
         itemListRect = itemList.GetComponent<RectTransform>();
+        upArrow.gameObject.SetActive(false);
+        downArrow.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -45,15 +47,27 @@ public class DiaryUI : MonoBehaviour
             Destroy(child.gameObject);
         }
         slotUIList = new List<ItemSlotUI>();
-        foreach (var itemSlot in diary.GetItems())
+        List<ItemBase> items = diary.GetItems();
+        if (items != null && items.Count > 0)
         {
-            var slotUIObj = Instantiate(itemSlotUI, itemList.transform);
-            slotUIObj.SetData(itemSlot);
+            // La lista degli oggetti è valida e contiene almeno un elemento
+            itemList.SetActive(true);
+            foreach (var itemSlot in diary.GetItems())
+            {
+                var slotUIObj = Instantiate(itemSlotUI, itemList.transform);
+                slotUIObj.SetData(itemSlot);
 
-            slotUIList.Add(slotUIObj);
+                slotUIList.Add(slotUIObj);
+            }
+            UpdateItemSelection();
+            
         }
-
-        UpdateItemSelection();
+        else
+        {
+            // La lista degli oggetti è vuota o nulla
+            itemList.SetActive(false);
+        }
+        
     }
 
     public void HandleUpdate(Action onBack)
@@ -68,6 +82,7 @@ public class DiaryUI : MonoBehaviour
             --selectedItem;
         }
 
+        
         selectedItem = Mathf.Clamp(selectedItem, 0, diary.GetItems().Count - 1);
 
         if (prevSelection != selectedItem)
@@ -82,34 +97,50 @@ public class DiaryUI : MonoBehaviour
 
     void UpdateItemSelection()
     {
-        for (int i = 0; i < slotUIList.Count; i++)
+        if (diary.GetItems() != null && diary.GetItems().Count > 0)
         {
-            if (i == selectedItem)
+            itemIcon.gameObject.SetActive(true);
+            for (int i = 0; i < slotUIList.Count; i++)
             {
-                slotUIList[i].Name.color = highlightedColor;
-            }
-            else
-            {
-                slotUIList[i].Name.color = textColor;
-            }
+                if (i == selectedItem)
+                {
+                    slotUIList[i].Name.color = highlightedColor;
+                }
+                else
+                {
+                    slotUIList[i].Name.color = textColor;
+                }
 
-            var slot = diary.GetItems()[selectedItem];
-            itemIcon.sprite = slot.Icon;
-            itemDescription.text = slot.Description;
+                var items = diary.GetItems();
+                if (selectedItem >= 0 && selectedItem < items.Count)
+                {
+                    var slot = items[selectedItem];
+                    itemIcon.sprite = slot.Icon;
+                    itemDescription.text = slot.Description;
+                }
 
-            HandleScrolling();
+                HandleScrolling();
+            }
+        }
+        else
+        {
+            // Gestisce il caso in cui la lista degli oggetti nel diario sia vuota o nulla
+            itemIcon.gameObject.SetActive(false);
+            itemDescription.text = "Ancora nessuna pagina nel diario.";
         }
     }
 
     void HandleScrolling()
     {
-        float scrollPos = Mathf.Clamp(selectedItem - itemsInViewport/2, 0, selectedItem) * slotUIList[0].Height;
+        bool hasItems = diary.GetItems().Count > 0;
+
+        float scrollPos = Mathf.Clamp(selectedItem - itemsInViewport / 2, 0, selectedItem) * slotUIList[0].Height;
         itemListRect.localPosition = new Vector2(itemListRect.localPosition.x, scrollPos);
 
-        bool showUpArrow = selectedItem > itemsInViewport / 2;
+        bool showUpArrow = selectedItem > itemsInViewport / 2 && hasItems;
         upArrow.gameObject.SetActive(showUpArrow);
 
-        bool showDownArrow = selectedItem + itemsInViewport / 2 < slotUIList.Count;
+        bool showDownArrow = selectedItem + itemsInViewport / 2 < slotUIList.Count && hasItems;
         downArrow.gameObject.SetActive(showDownArrow);
     }
 }
