@@ -40,12 +40,12 @@ public class CharacterAnimator : MonoBehaviour, ISavable
     public bool IsMoving { get; set; }
 
     // States
-    SpriteAnimator walkDownAnim;
-    SpriteAnimator walkUpAnim;
-    SpriteAnimator walkRightAnim;
-    SpriteAnimator walkLeftAnim;
+    public SpriteAnimator walkDownAnim;
+    public SpriteAnimator walkUpAnim;
+    public SpriteAnimator walkRightAnim;
+    public SpriteAnimator walkLeftAnim;
 
-    SpriteAnimator currentAnim;
+    public SpriteAnimator currentAnim;
     bool wasPreviouslyMoving;
 
     // References

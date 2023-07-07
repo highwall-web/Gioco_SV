@@ -51,4 +51,5 @@ public class Portal : MonoBehaviour, IPlayerTriggerable
 
 public enum DestinationIdentifier { BrownOld, RedOld, YellowOld, PurpleOld, GreenOld, BlueOld,
                                     BrownNew, RedNew, YellowNew, PurpleNew, GreenNew, BlueNew,
-                                    Castle }
+                                    Castle, Lab }
+                                    
