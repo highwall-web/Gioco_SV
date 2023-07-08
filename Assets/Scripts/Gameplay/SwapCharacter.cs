@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SwapCharacter : MonoBehaviour, ISavable
 {
@@ -13,6 +14,10 @@ public class SwapCharacter : MonoBehaviour, ISavable
     private CharacterAnimator characterAnimator;
     private int actualCharacter; // 0 = Mor, 1 = Istera
 
+    [SerializeField] Text dialogText;
+    [SerializeField] Font fontAssetNew;
+    [SerializeField] Font fontAssetOld;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +28,7 @@ public class SwapCharacter : MonoBehaviour, ISavable
         character = playerController.GetComponent<Character>();
         characterAnimator = GetComponent<CharacterAnimator>();
         // Initializes the position of the other era
-        loadPosition = new Vector3(45.50f, 0.50f);
+        loadPosition = new Vector3(68.50f, 57.50f);
     }
 
     // Update is called once per frame
@@ -38,11 +43,15 @@ public class SwapCharacter : MonoBehaviour, ISavable
                 {
                     actualCharacter = 1;
                     characterAnimator.setSprites(actualCharacter);
+                    dialogText.font = fontAssetNew;
+                    dialogText.fontSize = 35;
                 }
                 else // Istera (1) -> Mor (0)
                 {
                     actualCharacter = 0;
                     characterAnimator.setSprites(actualCharacter);
+                    dialogText.font = fontAssetOld;
+                    dialogText.fontSize = 40;
                 }
 
                 // Swap character

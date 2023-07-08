@@ -277,6 +277,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 7539e382990131c478d953299cb131d1, type: 2}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: questToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: timeBetweenPattern
       value: 3
       objectReference: {fileID: 0}

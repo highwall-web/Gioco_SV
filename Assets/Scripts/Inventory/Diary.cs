@@ -22,10 +22,7 @@ public class Diary : MonoBehaviour, ISavable
 
     public void AddItem(ItemBase item)
     {
-
         items.Add(item);
-
-
     }
 
     public List<ItemBase> GetItems()

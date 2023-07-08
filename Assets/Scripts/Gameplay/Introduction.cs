@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Introduction : MonoBehaviour
 {
@@ -14,10 +15,14 @@ public class Introduction : MonoBehaviour
     [SerializeField] Fader thunderFader;
 
     [SerializeField] GameObject dialogBox;
+    [SerializeField] GameObject dialogBox_name;
     public Sprite dialogSpriteOld;
     public Sprite dialogSpriteNew;
     [SerializeField] Text dialogText;
+    [SerializeField] Text dialogText_name;
     [SerializeField] int lettersPerSecond;
+    [SerializeField] Font fontAssetNew;
+    [SerializeField] Font fontAssetOld;
 
     public event Action OnShowDialog;
     public event Action OnDialogFinished;
@@ -27,19 +32,28 @@ public class Introduction : MonoBehaviour
     private CharacterAnimator characterAnimMor;
     private CharacterAnimator characterAnimIstera;
 
+    public Dialog dialogIntro;
+    
     public Dialog dialogMor;
     public Dialog dialogIstera;
     public Dialog dialogBoth;
+
+    public Dialog dialogOutro;
     private int actualCharacter;
 
     private bool firstTimeFade;
+
+    private bool firstTimeDialogIntro;
     private bool firstTimeDialogMor;
     private bool firstTimeDialogIstera;
+    private bool firstTimeDialogBoth;
     private int newScene;
     private int ended;
     private int fade;
     private int thunderFirst;
     private int thunderSecond;
+
+    private bool charTalking = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +62,8 @@ public class Introduction : MonoBehaviour
         firstTimeFade = true;
         firstTimeDialogMor = true;
         firstTimeDialogIstera = true;
+        firstTimeDialogIntro = true;
+        firstTimeDialogBoth = true;
         newScene = 0;
         thunderFirst = 0;
         thunderSecond = 0;
@@ -89,15 +105,19 @@ public class Introduction : MonoBehaviour
     {
         AudioManager.i.PlaySfx(AudioID.ThunderHit, pauseMusic: false);
         yield return thunderFader.FadeIn(0.3f);
-        StartCoroutine(ShowDialog(dialogBoth));
         thunderSecond = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        if(firstTimeDialogIntro){
+            firstTimeDialogIntro = false;
+            StartCoroutine(ShowDialog(dialogIntro));
+        }
         // The fade in when the scene loads
-        if (firstTimeFade)
+        if (firstTimeFade && !firstTimeDialogIntro && ended == 1)
         {
             firstTimeFade = false;
             StartCoroutine(Fade(0));
@@ -106,13 +126,14 @@ public class Introduction : MonoBehaviour
         // Mor's talking
         if (fade == 0 && firstTimeDialogMor)
         {
+            charTalking = true;
             firstTimeDialogMor = false;
             actualCharacter = 0;
             StartCoroutine(ShowDialog(dialogMor));
         }
 
         // The first 2 thunders
-        if (ended == 1 && firstTimeDialogIstera && thunderFirst == 0)
+        if (ended == 2 && firstTimeDialogIstera && thunderFirst == 0)
         {
             thunderFirst = 2;
             thunderFader2.SetActive(true);
@@ -120,25 +141,35 @@ public class Introduction : MonoBehaviour
         }
         
         // Istera's talking
-        if (ended == 1 && firstTimeDialogIstera && thunderFirst == 1)
+        if (ended == 2 && firstTimeDialogIstera && thunderFirst == 1)
         {
+            charTalking = true;
             firstTimeDialogIstera = false;
             actualCharacter = 1;
             StartCoroutine(ShowDialog(dialogIstera));
         }
 
         // The thunder that hits them and their scream
-        if (ended == 2 && newScene == 0 && thunderSecond == 0)
+        if (ended == 3 && thunderSecond == 0)
         {
+            firstTimeDialogBoth = false;
             thunderSecond = 2;
             StartCoroutine(ThunderFadeSecond());
+            StartCoroutine(ShowDialog(dialogBoth));
+
         }
 
+        if (ended == 4 && thunderSecond == 1 && !firstTimeDialogBoth)
+        {
+            firstTimeDialogBoth = true;
+            StartCoroutine(Fade(1));
+            StartCoroutine(ShowDialog(dialogOutro));
+        }
         // Fade out to change scene
-        if (ended == 3 && newScene == 0 && thunderSecond == 1)
+        if (ended == 5 && newScene == 0)
         {
             newScene = 1;
-            StartCoroutine(Fade(1));
+            
             StartCoroutine("SwitchScene");
         }
     }
@@ -153,10 +184,24 @@ public class Introduction : MonoBehaviour
         if (actualCharacter == 0)
         {
             dialogBox.GetComponent<Image>().sprite = dialogSpriteOld;
+            dialogBox_name.GetComponent<Image>().sprite = dialogSpriteOld;
+            dialogText_name.text = "Mor";
+            dialogText.font = fontAssetOld;
+            dialogText_name.font = fontAssetOld;
+            dialogText.fontSize = 40;
+            dialogText_name.fontSize = 28;
         }
-        else
+        else if(actualCharacter == 1)
         {
             dialogBox.GetComponent<Image>().sprite = dialogSpriteNew;
+            dialogBox_name.GetComponent<Image>().sprite = dialogSpriteNew;
+            dialogText_name.text = "Istera";
+            dialogText.font = fontAssetNew;
+            dialogText_name.font = fontAssetNew;
+            dialogText.fontSize = 35;
+            dialogText_name.fontSize = 20;
+        }else{
+            //both
         }
 
         OnShowDialog?.Invoke();
@@ -164,6 +209,10 @@ public class Introduction : MonoBehaviour
         IsShowing = true;
         Ended = false;
         dialogBox.SetActive(true);
+        if(charTalking){
+            dialogBox_name.SetActive(true);
+        }
+        
 
         foreach (var line in dialog.Lines)
         {
@@ -173,9 +222,13 @@ public class Introduction : MonoBehaviour
         }
 
         dialogBox.SetActive(false);
+        if(charTalking){
+            dialogBox_name.SetActive(false);
+        }
         IsShowing = false;
         Ended = true;
         ended++;
+        charTalking = false;
         OnDialogFinished?.Invoke();
     }
 

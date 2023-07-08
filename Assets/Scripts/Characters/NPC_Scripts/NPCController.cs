@@ -31,6 +31,14 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
         itemGiver = GetComponent<ItemGiver>();
     }
 
+    private void Start(){
+        if(questToStart != null && questToStart.already_done){
+            Debug.Log(questToStart.already_done);
+            questToStart = null;
+            
+        }
+    }
+
     public IEnumerator Interact(Transform initiator)
     {
         if (state == NPCState.Idle)
@@ -55,18 +63,22 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             {
                 activeQuest =  new Quest(questToStart);
                 yield return activeQuest.StartQuest();
-                questToStart = null;
+                questToStart.already_done = true;
 
                 if (activeQuest.CanBeCompleted())
                 {
+                    Debug.Log("completata2");
                     yield return activeQuest.CompleteQuest();
                     activeQuest = null;
                 }
+                questToStart = null;
             }
             else if(activeQuest != null)
             {
+
                 if (activeQuest.CanBeCompleted())
                 {
+                    Debug.Log("completata1");
                     yield return activeQuest.CompleteQuest();
                     activeQuest = null;
                 }

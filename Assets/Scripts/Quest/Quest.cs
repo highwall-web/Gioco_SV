@@ -70,9 +70,11 @@ public class Quest
         if (Base.RequiredItems != null)
         {
             if(!diary.HasItem(Base.RequiredItems)){
+                
                 return false;
             }
         }
+        Debug.Log("Sono qui");
         return true;
     }
 }

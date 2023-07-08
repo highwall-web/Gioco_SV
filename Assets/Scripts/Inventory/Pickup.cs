@@ -12,6 +12,13 @@ public class Pickup : MonoBehaviour, Interactable, ISavable
         return Used;
     }
 
+    private void Start(){
+        if(item.already_used){
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
+        }
+    }
+
     public IEnumerator Interact(Transform initiator)
     {
         if (!Used)
@@ -19,7 +26,7 @@ public class Pickup : MonoBehaviour, Interactable, ISavable
             initiator.GetComponent<Diary>().AddItem(item);
 
             Used = true;
-
+            item.already_used = Used;
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
 
@@ -31,11 +38,13 @@ public class Pickup : MonoBehaviour, Interactable, ISavable
     public void RestoreState(object state)
     {
         Used = (bool)state;
-
+        item.already_used = Used;
         if(Used)
         {
+            
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
         }
+        
     }
 }

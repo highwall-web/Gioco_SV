@@ -9,6 +9,9 @@ public class GameController : MonoBehaviour
 
     [SerializeField] PlayerController playerController;
     [SerializeField] DiaryUI diaryUI;
+
+    [SerializeField] Font fontAssetNew;
+    [SerializeField] Font fontAssetOld;
     private SwapCharacter swapCharacter;
     public Sprite dialogSpriteOld;
     public Sprite dialogSpriteNew;
@@ -122,10 +125,20 @@ public class GameController : MonoBehaviour
             if(swapCharacter.getActualCharacter() == 0)
             {
                 diaryUI.GetComponent<Image>().sprite = dialogSpriteOld;
+                Text[] textComponents = diaryUI.GetComponentsInChildren<Text>();
+                foreach(Text textComponent in textComponents){
+                    textComponent.font = fontAssetOld;
+                    textComponent.fontSize = 32;
+                }
             }
             else
             {
                 diaryUI.GetComponent<Image>().sprite = dialogSpriteNew;
+                Text[] textComponents = diaryUI.GetComponentsInChildren<Text>();
+                foreach(Text textComponent in textComponents){
+                    textComponent.font = fontAssetNew;
+                    textComponent.fontSize = 25;
+                }
             }
             diaryUI.gameObject.SetActive(true);
             state = GameState.Diary;

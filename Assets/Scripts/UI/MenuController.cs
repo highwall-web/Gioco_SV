@@ -10,6 +10,8 @@ public class MenuController : MonoBehaviour
     [SerializeField] GameObject menu;
     [SerializeField] Color highlightedColor;
     [SerializeField] Color textColor;
+    [SerializeField] Font fontAssetNew;
+    [SerializeField] Font fontAssetOld;
 
     public GameObject player;
     private SwapCharacter swapCharacter;
@@ -43,10 +45,20 @@ public class MenuController : MonoBehaviour
         if (actualCharacter == 0)
         {
             menu.GetComponent<Image>().sprite = dialogSpriteOld;
+            Text[] textComponents = menu.GetComponentsInChildren<Text>();
+            foreach(Text textComponent in textComponents){
+                textComponent.font = fontAssetOld;
+                textComponent.fontSize = 32;
+            }
         }
         else
         {
             menu.GetComponent<Image>().sprite = dialogSpriteNew;
+            Text[] textComponents = menu.GetComponentsInChildren<Text>();
+            foreach(Text textComponent in textComponents){
+                textComponent.font = fontAssetNew;
+                textComponent.fontSize = 25;
+            }
         }
 
         IsShowing = true;
