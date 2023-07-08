@@ -16,6 +16,16 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
     [Header("Movement")]
     [SerializeField] List<Vector2> movementPattern;
     [SerializeField] float timeBetweenPattern;
+    
+    private GameObject essentialObjects;
+    private ThingsToSave thingsToSave;
+
+    public bool hasQuest;
+
+    [SerializeField] public int IsStarted;
+    [SerializeField] public int IsInProgress;
+    [SerializeField] public int IsCompleted;
+
 
     NPCState state;
     float idleTimer = 0f;
@@ -32,11 +42,56 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
     }
 
     private void Start(){
-        if(questToStart != null && questToStart.already_done){
-            Debug.Log(questToStart.already_done);
-            questToStart = null;
-            
+        Debug.Log(IsStarted);
+        if (hasQuest)
+        {
+            LoadAttribute();
         }
+        essentialObjects = GameObject.Find("EssentialObjects");
+
+        if(IsStarted == 1){
+            activeQuest = new Quest(questToStart);
+            questToStart = null;
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (hasQuest)
+        {
+            Debug.Log("BEFORE SAVE IsStarted: " + IsStarted);
+            Debug.Log("BEFORE SAVE IsInProgress: " + IsInProgress);
+            Debug.Log("BEFORE SAVE IsCompleted: " + IsCompleted);
+            SaveAttribute();
+        }
+    }
+
+    private void LoadAttribute()
+    {
+        if (PlayerPrefs.HasKey(gameObject.name + "IsStarted"))
+        {
+            IsStarted = PlayerPrefs.GetInt(gameObject.name + "IsStarted");
+            Debug.Log("LOAD IsStarted: " + IsStarted);
+        }
+        if (PlayerPrefs.HasKey(gameObject.name + "IsInProgress"))
+        {
+            IsStarted = PlayerPrefs.GetInt(gameObject.name + "IsInProgress");
+            Debug.Log("LOAD IsInProgress: " + IsInProgress);
+        }
+        if (PlayerPrefs.HasKey(gameObject.name + "IsCompleted"))
+        {
+            IsStarted = PlayerPrefs.GetInt(gameObject.name + "IsCompleted");
+            Debug.Log("LOAD IsCompleted: " + IsCompleted);
+        }
+    }
+
+    private void SaveAttribute()
+    {
+        Debug.Log(gameObject.name);
+        PlayerPrefs.SetInt(gameObject.name + "IsStarted", IsStarted);
+        PlayerPrefs.SetInt(gameObject.name + "IsInProgress", IsInProgress);
+        PlayerPrefs.SetInt(gameObject.name + "IsCompleted", IsCompleted);
+        PlayerPrefs.Save();
     }
 
     public IEnumerator Interact(Transform initiator)
@@ -45,67 +100,101 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
         {
             state = NPCState.Dialog;
             character.lookTowards(initiator.position);
-
-            if(questToComplete != null)
+            if (hasQuest)
             {
-                var quest = new Quest(questToComplete);
-                yield return quest.CompleteQuest();
-                questToComplete = null;
-
-                Debug.Log($"{quest.Base.Name} completed!");
-            }
-
-            if(itemGiver != null && itemGiver.CanBeGiven())
-            {
-                yield return itemGiver.GiveItem(initiator.GetComponent<PlayerController>());
-            }
-            else if(questToStart != null)
-            {
-                activeQuest =  new Quest(questToStart);
-                yield return activeQuest.StartQuest();
-                questToStart.already_done = true;
-
-                if (activeQuest.CanBeCompleted())
+                if (questToComplete != null)
                 {
-                    Debug.Log("completata2");
-                    yield return activeQuest.CompleteQuest();
-                    activeQuest = null;
+                    var quest = new Quest(questToComplete);
+                    yield return quest.CompleteQuest();
+                    questToComplete = null;
+                    IsCompleted = 1;
+
+                    //Debug.Log($"{quest.Base.Name} completed!");
                 }
-                questToStart = null;
-            }
-            else if(activeQuest != null)
-            {
 
-                if (activeQuest.CanBeCompleted())
+                if (itemGiver != null && itemGiver.CanBeGiven())
                 {
-                    Debug.Log("completata1");
-                    yield return activeQuest.CompleteQuest();
-                    activeQuest = null;
+                    yield return itemGiver.GiveItem(initiator.GetComponent<PlayerController>());
+                }
+                else if (questToStart != null)
+                {
+                    activeQuest = new Quest(questToStart);
+                    yield return activeQuest.StartQuest();
+                    IsStarted = 1;
+                    IsInProgress = 1;
+
+                    if (activeQuest.CanBeCompleted() && thingsToSave.IsInProgress)
+                    {
+                        yield return activeQuest.CompleteQuest();
+                        activeQuest = null;
+                        IsCompleted = 1;
+                        IsInProgress = 0;
+                        activeQuest = null;
+                    }
+                    questToStart = null;
+                }
+                else if (activeQuest != null)
+                {
+
+                    if (activeQuest.CanBeCompleted())
+                    {
+                        yield return activeQuest.CompleteQuest();
+                        activeQuest = null;
+                        IsCompleted = 1;
+                        IsInProgress = 0;
+                        activeQuest = null;
+                    }
+                    else
+                    {
+                        yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue);
+                    }
                 }
                 else
                 {
-                    yield return DialogManager.Instance.ShowDialog(activeQuest.Base.InProgressDialogue);
+                    //gestisce il dialog dopo choice
+                    if (hasChoiceBox)
+                    {
+                        int selectedChoice = 0;
+                        yield return DialogManager.Instance.ShowDialog(dialog, choiceOptions,
+                            (choiceIndex) => selectedChoice = choiceIndex);
+                        // Gestisce l'opzione selezionata
+                        if (selectedChoice == 0)
+                        {
+                            yield return DialogManager.Instance.ShowDialogText("suca");
+                        }
+                        else
+                        {
+                            yield return DialogManager.Instance.ShowDialogText("tocca");
+                        }
+                    }
+                    else
+                    {
+                        yield return DialogManager.Instance.ShowDialog(dialog);
+                    }
+
                 }
             }
             else
             {
-                //gestisce il dialog dopo choice
                 if (hasChoiceBox)
                 {
                     int selectedChoice = 0;
                     yield return DialogManager.Instance.ShowDialog(dialog, choiceOptions,
                         (choiceIndex) => selectedChoice = choiceIndex);
                     // Gestisce l'opzione selezionata
-                    if(selectedChoice == 0)
+                    if (selectedChoice == 0)
                     {
                         yield return DialogManager.Instance.ShowDialogText("suca");
-                    }else{
+                    }
+                    else
+                    {
                         yield return DialogManager.Instance.ShowDialogText("tocca");
                     }
-                }else{
+                }
+                else
+                {
                     yield return DialogManager.Instance.ShowDialog(dialog);
                 }
-                
             }
 
             idleTimer = 0f;

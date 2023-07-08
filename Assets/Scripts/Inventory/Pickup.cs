@@ -5,6 +5,9 @@ using UnityEngine;
 public class Pickup : MonoBehaviour, Interactable, ISavable
 {
     [SerializeField] ItemBase item;
+
+    private GameObject essentialObjects;
+    private ThingsToSave thingsToSave;
     public bool Used { get; set; } = false;
 
     public object CaptureState()
@@ -13,7 +16,10 @@ public class Pickup : MonoBehaviour, Interactable, ISavable
     }
 
     private void Start(){
-        if(item.already_used){
+        essentialObjects = GameObject.Find("EssentialObjects");
+        thingsToSave = essentialObjects.GetComponentInChildren<ThingsToSave>();
+
+        if (thingsToSave.IsPickedUp){
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
         }
@@ -26,7 +32,7 @@ public class Pickup : MonoBehaviour, Interactable, ISavable
             initiator.GetComponent<Diary>().AddItem(item);
 
             Used = true;
-            item.already_used = Used;
+            thingsToSave.IsPickedUp = Used;
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
 
@@ -38,7 +44,7 @@ public class Pickup : MonoBehaviour, Interactable, ISavable
     public void RestoreState(object state)
     {
         Used = (bool)state;
-        item.already_used = Used;
+        thingsToSave.IsPickedUp = Used;
         if(Used)
         {
             

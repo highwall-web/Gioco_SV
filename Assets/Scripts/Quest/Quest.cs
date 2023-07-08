@@ -74,7 +74,6 @@ public class Quest
                 return false;
             }
         }
-        Debug.Log("Sono qui");
         return true;
     }
 }

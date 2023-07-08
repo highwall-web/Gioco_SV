@@ -17,14 +17,15 @@ MonoBehaviour:
   startDialogue:
     lines:
     - '"Per strada ho perso una pagina,'
-    - dovrebbe essere ancora in citta',
-    - potresti cercarla per me?"
+    - non so proprio dove sia,
+    - potrebbe cercarla per me?"
   inProgressDialogue:
     lines:
-    - '"Non so proprio dov''e''."'
+    - '"Forse la pagina si trova'
+    - nella prossima citta'."
   completedDialogue:
     lines:
-    - '"Oh, bravo, l''ha trovata!"'
+    - '"Oh, la ringrazio, l''ha trovata!'
+    - A me non serve, puo' tenerla lei."
   requiredItem: {fileID: 11400000, guid: e3f950c324c2207459d543fc0e0a565f, type: 2}
   rewardItem: {fileID: 11400000, guid: 4cb916f4b34286a40a91c14ea704ce4d, type: 2}
-  already_done: 1

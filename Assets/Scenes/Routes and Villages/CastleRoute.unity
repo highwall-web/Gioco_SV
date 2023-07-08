@@ -4795,7 +4795,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: dialog.lines.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: dialog.lines.Array.data[0]
@@ -4803,7 +4803,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: dialog.lines.Array.data[1]
-      value: traffico qui."
+      value: traffico qui, ma oggi e' festa
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[2]
+      value: e le strade sono chiuse
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[3]
+      value: per la scoperta della dottoressa!"
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: movementPattern.Array.size
@@ -8057,12 +8065,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: hasChoiceBox
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: dialog.lines.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: dialog.lines.Array.data[0]
-      value: '"Torna nel suo castello, Sire?"'
+      value: '"Sta andando al villaggio, Sire?"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.data[0]
+      value: Si'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.data[1]
+      value: No
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: walkUpSprites_NPC.Array.size

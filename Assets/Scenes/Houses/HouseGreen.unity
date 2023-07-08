@@ -1621,6 +1621,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: hasChoiceBox
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: questToComplete
       value: 
       objectReference: {fileID: 0}
@@ -1630,19 +1634,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: dialog.lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: dialog.lines.Array.data[0]
-      value: Dialogo
+      value: '"Ho intravisto una chiavetta USB'
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: dialog.lines.Array.data[1]
-      value: Dialogo
+      value: ma non riesco proprio
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[2]
+      value: a ricordare dove.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[3]
+      value: Magari era la sua?"
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: movementPattern.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.data[0]
+      value: Si'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.data[1]
+      value: No
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: movementPattern.Array.data[0].x

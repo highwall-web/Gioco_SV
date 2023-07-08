@@ -2968,6 +2968,926 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &128714764
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[0]
+      value: '"Amo le feste!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[1]
+      value: Vengo dal villaggio a sud!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[5].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[6].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[7].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[8].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[9].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1456250309, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 1244616877, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1456250309, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1892665261, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1907684225, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1732407358, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1907684225, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 588242283, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1795784959, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -244931119, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1795784959, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -579207948, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 655914242, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1147963529, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 655914242, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 593529014, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Name
+      value: NPC2-Past_Male
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 655914242, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909816373288652877, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: uniqueId
+      value: 33e4737c-098a-4a41-a546-bf0e2f66e80b
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+--- !u!1001 &187007297
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: timeBetweenPattern
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[0]
+      value: '"Da grande voglio essere'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[1]
+      value: come lei!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[2]
+      value: questo laboratorio."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[5].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[6].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[7].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[8].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[9].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1793864091, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1468216406, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1793864091, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -189313724, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 953316379, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1618673288, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 953316379, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -368578978, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1350419684, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1170975025, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1350419684, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -400744446, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 937197538, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 1856356432, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 937197538, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 1044607407, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Name
+      value: NPC9-Future_Female
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1793864091, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 68.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909816373288652877, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: uniqueId
+      value: 013f432d-65fd-44f2-a4a8-6c00109a5334
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+--- !u!1001 &263521852
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[0]
+      value: '"Mi piacciono i tappeti rossi,'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[1]
+      value: peccato non ce ne sia uno."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[2]
+      value: questo laboratorio."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[5].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[6].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[7].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[8].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[9].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1456250309, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 1244616877, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1456250309, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1892665261, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1907684225, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1732407358, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1907684225, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 588242283, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1795784959, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -244931119, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1795784959, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -579207948, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 655914242, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1147963529, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 655914242, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 593529014, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Name
+      value: NPC5-Past_Male
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1795784959, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909816373288652877, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: uniqueId
+      value: 7b989574-4cd4-48fb-a2d0-cba2fdc45e0f
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+--- !u!1001 &330842671
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[0]
+      value: '"Mio marito mi ha trascinata qui'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[1]
+      value: perche' ama le feste."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[2]
+      value: questo laboratorio."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[5].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[6].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[7].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[8].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[9].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 616901138, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 164494854, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 616901138, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 1931367599, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: -1622337542, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -791107587, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: -1622337542, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 527929686, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1296231481, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -2073102293, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1296231481, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1054195564, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1865623474, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1957466258, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1865623474, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1752626249, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Name
+      value: NPC6-Past_Female
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1296231481, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909816373288652877, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: uniqueId
+      value: 067d4f26-922c-4b69-bd32-06912d9f6b48
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
 --- !u!1001 &390883850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8453,8 +9373,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: hasChoiceBox
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: timeBetweenPattern
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: dialog.lines.Array.size
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: dialog.lines.Array.data[0]
@@ -8466,11 +9398,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: dialog.lines.Array.data[2]
-      value: questo laboratorio."
+      value: questo laboratorio.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[3]
+      value: So solo che ci vive una pazza."
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: movementPattern.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.data[0]
+      value: Sono io
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.data[1]
+      value: Sono io
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: movementPattern.Array.data[0].x
@@ -8626,7 +9570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 66.05
+      value: 66.5
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8746,6 +9690,235 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 093aba3eb159e1d4d84adcb269d9e71d, type: 3}
+--- !u!1001 &1016208748
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[0]
+      value: '"Sono cosi'' ansioso di'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[1]
+      value: vedere la sua scoperta!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[5].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[6].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[7].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[8].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[9].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: -2081715780, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 1239257033, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: -2081715780, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -367718301, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 89615575, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1643271855, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 89615575, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 208228464, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 308019309, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1488367216, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 308019309, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 2043596282, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1876973355, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -602752948, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1876973355, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1735272231, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Name
+      value: NPC8-Future_Male
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2081715780, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 66.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909816373288652877, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: uniqueId
+      value: c2e93fea-1776-4ff4-9284-f2d814da8f39
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
 --- !u!1 &1273341064
 GameObject:
   m_ObjectHideFlags: 0
@@ -9020,6 +10193,235 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1456767427
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[0]
+      value: '"Devo farmi fare'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[1]
+      value: un ritratto con lei!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[2]
+      value: questo laboratorio."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[5].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[6].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[7].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[8].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[9].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 616901138, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 164494854, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 616901138, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 1931367599, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: -1622337542, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -791107587, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: -1622337542, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 527929686, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1296231481, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -2073102293, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1296231481, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1054195564, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1865623474, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1957466258, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1865623474, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1752626249, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Name
+      value: NPC3-Past_Female
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1865623474, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909816373288652877, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: uniqueId
+      value: e76b2554-c047-421b-914d-b30c38acd4e2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
 --- !u!1 &1540461852
 GameObject:
   m_ObjectHideFlags: 0
@@ -9282,6 +10684,235 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1604311806
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[0]
+      value: '"Congratulazioni per'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[1]
+      value: la sua incoronazione!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[2]
+      value: questo laboratorio."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[5].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[6].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[7].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[8].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[9].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: -336278636, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -860301721, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: -336278636, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 1496481754, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1192318561, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1165163369, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1192318561, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -398578103, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1260206180, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 1139243653, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1260206180, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 137184401, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: -1153980611, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 2138765856, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: -1153980611, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1899500808, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Name
+      value: NPC7-Past_Male
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1260206180, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909816373288652877, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: uniqueId
+      value: 4d70df5a-60b0-4591-a152-eb146bf4e260
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
 --- !u!1 &1712530963
 GameObject:
   m_ObjectHideFlags: 0
@@ -11882,6 +13513,235 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &2008940000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[0]
+      value: '"Che strano vialetto..."'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[1]
+      value: questo laboratorio."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[2]
+      value: questo laboratorio."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[0].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[1].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[2].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[3].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[4].y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[5].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[6].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[7].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[8].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: movementPattern.Array.data[9].y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: -336278636, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -860301721, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: -336278636, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 1496481754, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1192318561, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -1165163369, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1192318561, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -398578103, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1260206180, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 1139243653, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1260206180, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 137184401, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: -1153980611, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 2138765856, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: -1153980611, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1899500808, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Name
+      value: NPC4-Past_Male
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1153980611, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909816373288652877, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: uniqueId
+      value: a4258c64-17c1-4aaa-9395-bf73849b2231
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
 --- !u!1001 &4782500429502530225
 PrefabInstance:
   m_ObjectHideFlags: 0

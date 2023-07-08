@@ -13108,6 +13108,195 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &666943027
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: hasChoiceBox
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[0]
+      value: '"Ben svegliato Sire,'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[1]
+      value: ha dormito bene?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[2]
+      value: Sono ansioso di vederla governare
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[3]
+      value: con la corona sul capo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[4]
+      value: Lei e' felice?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.data[0]
+      value: Si'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.data[1]
+      value: No
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: -1299703125, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -766194785, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: -1299703125, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1882479389, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: -345400983, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 887212839, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: -345400983, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1181332244, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 167527409, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 779303741, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 167527409, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 924937543, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1773140352, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 1162792360, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1773140352, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 77768675, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Name
+      value: NPC1_Male_Past
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -345400983, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 44.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909816373288652877, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: uniqueId
+      value: ce8e2fa9-7a1d-4d0c-bbcc-558ef8ab5f83
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
 --- !u!1 &731274010
 GameObject:
   m_ObjectHideFlags: 0
@@ -16779,6 +16968,203 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 093aba3eb159e1d4d84adcb269d9e71d, type: 3}
+--- !u!1001 &1362360243
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: hasChoiceBox
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[0]
+      value: '"Dottoressa, mi sembra un po'''
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[1]
+      value: pallida, si sente bene?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[2]
+      value: Ha ancora la chaivetta USB
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[3]
+      value: con la sua ricerca?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[4]
+      value: L'ho portata fin qui in braccio
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[5]
+      value: perche' era svenuta
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: dialog.lines.Array.data[6]
+      value: durante il temporale."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.data[0]
+      value: L'ho persa
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: choiceOptions.Array.data[1]
+      value: No
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: -1299703125, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: -766194785, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: -1299703125, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkUpSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1882479389, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: -345400983, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 887212839, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: -345400983, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkDownSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: -1181332244, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 167527409, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 779303741, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 167527409, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkLeftSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 924937543, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[0]
+      value: 
+      objectReference: {fileID: 1773140352, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[1]
+      value: 
+      objectReference: {fileID: 1162792360, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[2]
+      value: 
+      objectReference: {fileID: 1773140352, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686347, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: walkRightSprites_NPC.Array.data[3]
+      value: 
+      objectReference: {fileID: 77768675, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Name
+      value: NPC2_Female_Future
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -345400983, guid: 6b1ea25c40b61f04189ed3902a117403, type: 3}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 66.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 57.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909816373288652877, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: uniqueId
+      value: c599be44-5246-457d-a906-3747f2e0faee
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
 --- !u!1 &1410802636
 GameObject:
   m_ObjectHideFlags: 0
