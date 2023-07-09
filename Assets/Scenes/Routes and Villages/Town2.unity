@@ -5121,6 +5121,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6595416013717915094, guid: 729681dcb688a9149b9e9cd750e21e0f, type: 3}
+      propertyPath: takeNpcName
+      value: NPC2-Past_Male_City
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595416013717915094, guid: 729681dcb688a9149b9e9cd750e21e0f, type: 3}
       propertyPath: questToCheck
       value: 
       objectReference: {fileID: 11400000, guid: 7539e382990131c478d953299cb131d1, type: 2}

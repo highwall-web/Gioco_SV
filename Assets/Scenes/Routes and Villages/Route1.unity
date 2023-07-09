@@ -5080,6 +5080,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6595416013717915094, guid: 729681dcb688a9149b9e9cd750e21e0f, type: 3}
+      propertyPath: takeNpcName
+      value: IsteraMother
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595416013717915094, guid: 729681dcb688a9149b9e9cd750e21e0f, type: 3}
       propertyPath: questToCheck
       value: 
       objectReference: {fileID: 11400000, guid: 61a5a904f1fd0984092707e5aa2e91e0, type: 2}

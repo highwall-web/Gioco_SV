@@ -16,8 +16,6 @@ public class QuestBase : ScriptableObject
     [SerializeField] ItemBase requiredItem;
     [SerializeField] ItemBase rewardItem;
 
-    //[SerializeField] public bool already_done = false;
-
     public string Name => objName;
     public string Description => description;
     public Dialog StartDialogue => startDialogue;

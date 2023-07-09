@@ -8,7 +8,6 @@ public class ItemBase : ScriptableObject
     [TextArea(minLines:1,maxLines:64)]
     [SerializeField] string description;
     [SerializeField] Sprite icon;
-    //[SerializeField] public bool already_used = false;
 
     public string Name => name;
     public string Description => description;

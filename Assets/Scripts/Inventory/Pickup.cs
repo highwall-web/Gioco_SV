@@ -6,33 +6,48 @@ public class Pickup : MonoBehaviour, Interactable, ISavable
 {
     [SerializeField] ItemBase item;
 
-    private GameObject essentialObjects;
-    private ThingsToSave thingsToSave;
-    public bool Used { get; set; } = false;
+    public int used = 0;
 
     public object CaptureState()
     {
-        return Used;
+        return used;
     }
 
     private void Start(){
-        essentialObjects = GameObject.Find("EssentialObjects");
-        thingsToSave = essentialObjects.GetComponentInChildren<ThingsToSave>();
-
-        if (thingsToSave.IsPickedUp){
+        LoadAttribute();
+        if (used == 1)
+        {
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
+    private void OnDisable()
+    {
+        SaveAttribute();
+    }
+
+    private void LoadAttribute()
+    {
+        if (PlayerPrefs.HasKey(gameObject.name + "used"))
+        {
+            used = PlayerPrefs.GetInt(gameObject.name + "used");
+        }
+    }
+
+    private void SaveAttribute()
+    {
+        PlayerPrefs.SetInt(gameObject.name + "used", used);
+        PlayerPrefs.Save();
+    }
+
     public IEnumerator Interact(Transform initiator)
     {
-        if (!Used)
+        if (used == 0)
         {
             initiator.GetComponent<Diary>().AddItem(item);
 
-            Used = true;
-            thingsToSave.IsPickedUp = Used;
+            used = 1;
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
 
@@ -43,11 +58,9 @@ public class Pickup : MonoBehaviour, Interactable, ISavable
 
     public void RestoreState(object state)
     {
-        Used = (bool)state;
-        thingsToSave.IsPickedUp = Used;
-        if(Used)
+        used = (int)state;
+        if(used == 1)
         {
-            
             GetComponent<SpriteRenderer>().enabled = false;
             GetComponent<BoxCollider2D>().enabled = false;
         }

@@ -8,12 +8,6 @@ public class QuestObject : MonoBehaviour
     [SerializeField] ObjectActions onStart;
     [SerializeField] ObjectActions onComplete;
 
-    [SerializeField] public string takeNpcName;
-
-    [SerializeField] private bool quest = false;
-
-    [SerializeField] private NPCController nPCController;
-
     QuestList questList;
 
     private void OnDestroy()
@@ -25,23 +19,13 @@ public class QuestObject : MonoBehaviour
     {
         questList = QuestList.GetQuestList();
         questList.OnUpdated += UpdateObjectStatus;
-        if(GameObject.Find(takeNpcName) != null){
-            nPCController = GameObject.Find(takeNpcName).GetComponent<NPCController>();
-        }
-        
-    }
+        UpdateObjectStatus();
 
-    private void Update(){
-        if(!quest){
-            quest = true;
-            UpdateObjectStatus();
-        }
-        
     }
 
     public void UpdateObjectStatus()
     {
-        if ((onStart != ObjectActions.DoNothing && questList.IsStarted(questToCheck.Name)) || nPCController.IsStarted == 1)
+        if (onStart != ObjectActions.DoNothing && questList.IsStarted(questToCheck.Name))
         {
             foreach (Transform child in transform)
             {
@@ -55,7 +39,7 @@ public class QuestObject : MonoBehaviour
                 }
             }
         }
-        if ((onComplete != ObjectActions.DoNothing && questList.IsCompleted(questToCheck.Name)) || nPCController.IsCompleted == 1)
+        if (onComplete != ObjectActions.DoNothing && questList.IsCompleted(questToCheck.Name))
         {
             foreach (Transform child in transform)
             {

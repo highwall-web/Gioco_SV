@@ -45,6 +45,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
     private void Start(){
         if (hasQuest)
         {
+            activeQuest = new Quest(questToStart);
             LoadAttribute();
         }
         
@@ -96,8 +97,6 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                     yield return quest.CompleteQuest();
                     questToComplete = null;
                     IsCompleted = 1;
-
-                    //Debug.Log($"{quest.Base.Name} completed!");
                 }
 
                 if (itemGiver != null && itemGiver.CanBeGiven())
