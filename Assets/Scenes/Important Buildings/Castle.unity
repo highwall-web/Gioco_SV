@@ -3138,7 +3138,7 @@ PrefabInstance:
       objectReference: {fileID: 593529014, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC2-Past_Male
+      value: NPC2-Past_Male_Outside
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -3371,7 +3371,7 @@ PrefabInstance:
       objectReference: {fileID: 1044607407, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC9-Future_Female
+      value: NPC9-Future_Female_Outside
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -3600,7 +3600,7 @@ PrefabInstance:
       objectReference: {fileID: 593529014, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC5-Past_Male
+      value: NPC5-Past_Male_Outside
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -3829,7 +3829,7 @@ PrefabInstance:
       objectReference: {fileID: -1752626249, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC6-Past_Female
+      value: NPC6-Past_Female_Outside
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -9558,7 +9558,7 @@ PrefabInstance:
       objectReference: {fileID: 1931491933, guid: 23dc98c02918fbd4ca1bf254262627de, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC1-Future_Male
+      value: NPC1-Future_Male_Outside
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -9860,7 +9860,7 @@ PrefabInstance:
       objectReference: {fileID: -1735272231, guid: 0a824349648a2434b8c647364b885dd1, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC8-Future_Male
+      value: NPC8-Future_Male_Outside
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -10363,7 +10363,7 @@ PrefabInstance:
       objectReference: {fileID: -1752626249, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC3-Past_Female
+      value: NPC3-Past_Female_Outside
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -10854,7 +10854,7 @@ PrefabInstance:
       objectReference: {fileID: -1899500808, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC7-Past_Male
+      value: NPC7-Past_Male_Outside
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -13683,7 +13683,7 @@ PrefabInstance:
       objectReference: {fileID: -1899500808, guid: c97a2207ec7973e44a9aa2d0cabc3084, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC4-Past_Male
+      value: NPC4-Past_Male_Outside
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite

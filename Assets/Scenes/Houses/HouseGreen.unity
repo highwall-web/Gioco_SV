@@ -1794,7 +1794,7 @@ PrefabInstance:
       objectReference: {fileID: 1044607407, guid: 6afff42d9833bc24e9346a402b74131b, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC1-Future_Female
+      value: NPC1-Future_Female_Green
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite

@@ -277,6 +277,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: IsCompleted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: questToStart
       value: 
       objectReference: {fileID: 11400000, guid: 7539e382990131c478d953299cb131d1, type: 2}
@@ -450,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 593529014, guid: a0fd74c8eca477c4cb125d9adce3b580, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC2-Past_Male
+      value: NPC2-Past_Male_City
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -6432,7 +6436,7 @@ PrefabInstance:
       objectReference: {fileID: 1067104085, guid: 9b4d64c961bd719439be94754e9cca6d, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC2-Future_Male
+      value: NPC2-Future_Male_City
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -6583,7 +6587,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     lines:
-    - Dovrei andare a casa dell'usciere >
+    - Dovrei andare a casa dell'usciere
     - prima di proseguire.
 --- !u!1 &1540461852
 GameObject:
@@ -11928,7 +11932,7 @@ PrefabInstance:
       objectReference: {fileID: -1358182749, guid: 388c890591d88dc4886bc89e4e1a6610, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC1-Future_Female
+      value: NPC1-Future_Female_City
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -12169,7 +12173,7 @@ PrefabInstance:
       objectReference: {fileID: -632176320, guid: 338df398376dba84e85a8e1a7507176d, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC3-Past_female
+      value: NPC3-Past_female_City
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -12552,7 +12556,7 @@ PrefabInstance:
       objectReference: {fileID: -1752626249, guid: 086093a812239b74988f1566bebfc5b4, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC1-Past_Female
+      value: NPC1-Past_Female_City
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
@@ -12727,6 +12731,10 @@ PrefabInstance:
     - target: {fileID: 6595416013717915094, guid: 729681dcb688a9149b9e9cd750e21e0f, type: 3}
       propertyPath: onComplete
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595416013717915094, guid: 729681dcb688a9149b9e9cd750e21e0f, type: 3}
+      propertyPath: takeNpcName
+      value: NPC1-Past_Male_Brown
       objectReference: {fileID: 0}
     - target: {fileID: 6595416013717915094, guid: 729681dcb688a9149b9e9cd750e21e0f, type: 3}
       propertyPath: questToCheck

@@ -4956,7 +4956,7 @@ PrefabInstance:
       objectReference: {fileID: 297343716, guid: 67854c79ff242074bbcc3f2def937d98, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC1-Future_Female
+      value: NPC1-Future_Female_Route1
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_FlipX
@@ -5782,7 +5782,7 @@ PrefabInstance:
       objectReference: {fileID: 470988467, guid: af99bb99693bfe04bb0447001ef63c3f, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC2-Future_Male
+      value: NPC2-Future_Male_Route1
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_FlipX
@@ -6007,7 +6007,7 @@ PrefabInstance:
       objectReference: {fileID: -632176320, guid: 338df398376dba84e85a8e1a7507176d, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC1-Past_Female
+      value: NPC1-Past_Female_Route1
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite

@@ -8,6 +8,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
     [SerializeField] Dialog dialog;
     [SerializeField] bool hasChoiceBox = false;
     [SerializeField] public List<string> choiceOptions;
+    [SerializeField] public List<string> answerOptions;//gestisce le risposte del chiocebox
 
     [Header("Quests")]
     [SerializeField] QuestBase questToStart;
@@ -42,26 +43,17 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
     }
 
     private void Start(){
-        Debug.Log(IsStarted);
         if (hasQuest)
         {
             LoadAttribute();
         }
-        essentialObjects = GameObject.Find("EssentialObjects");
-
-        if(IsStarted == 1){
-            activeQuest = new Quest(questToStart);
-            questToStart = null;
-        }
+        
     }
 
     private void OnDisable()
     {
         if (hasQuest)
         {
-            Debug.Log("BEFORE SAVE IsStarted: " + IsStarted);
-            Debug.Log("BEFORE SAVE IsInProgress: " + IsInProgress);
-            Debug.Log("BEFORE SAVE IsCompleted: " + IsCompleted);
             SaveAttribute();
         }
     }
@@ -71,23 +63,19 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
         if (PlayerPrefs.HasKey(gameObject.name + "IsStarted"))
         {
             IsStarted = PlayerPrefs.GetInt(gameObject.name + "IsStarted");
-            Debug.Log("LOAD IsStarted: " + IsStarted);
         }
         if (PlayerPrefs.HasKey(gameObject.name + "IsInProgress"))
         {
-            IsStarted = PlayerPrefs.GetInt(gameObject.name + "IsInProgress");
-            Debug.Log("LOAD IsInProgress: " + IsInProgress);
+            IsInProgress = PlayerPrefs.GetInt(gameObject.name + "IsInProgress");
         }
         if (PlayerPrefs.HasKey(gameObject.name + "IsCompleted"))
         {
-            IsStarted = PlayerPrefs.GetInt(gameObject.name + "IsCompleted");
-            Debug.Log("LOAD IsCompleted: " + IsCompleted);
+            IsCompleted = PlayerPrefs.GetInt(gameObject.name + "IsCompleted");
         }
     }
 
     private void SaveAttribute()
     {
-        Debug.Log(gameObject.name);
         PlayerPrefs.SetInt(gameObject.name + "IsStarted", IsStarted);
         PlayerPrefs.SetInt(gameObject.name + "IsInProgress", IsInProgress);
         PlayerPrefs.SetInt(gameObject.name + "IsCompleted", IsCompleted);
@@ -102,7 +90,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
             character.lookTowards(initiator.position);
             if (hasQuest)
             {
-                if (questToComplete != null)
+                if (questToComplete != null && IsCompleted == 0)
                 {
                     var quest = new Quest(questToComplete);
                     yield return quest.CompleteQuest();
@@ -116,7 +104,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                 {
                     yield return itemGiver.GiveItem(initiator.GetComponent<PlayerController>());
                 }
-                else if (questToStart != null)
+                else if (questToStart != null && IsStarted == 0 && IsInProgress == 0 && IsCompleted == 0)
                 {
                     activeQuest = new Quest(questToStart);
                     yield return activeQuest.StartQuest();
@@ -133,7 +121,7 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                     }
                     questToStart = null;
                 }
-                else if (activeQuest != null)
+                else if (activeQuest != null && IsStarted == 1 && IsInProgress == 1 && IsCompleted == 0 )
                 {
 
                     if (activeQuest.CanBeCompleted())
@@ -158,13 +146,10 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                         yield return DialogManager.Instance.ShowDialog(dialog, choiceOptions,
                             (choiceIndex) => selectedChoice = choiceIndex);
                         // Gestisce l'opzione selezionata
-                        if (selectedChoice == 0)
-                        {
-                            yield return DialogManager.Instance.ShowDialogText("suca");
-                        }
-                        else
-                        {
-                            yield return DialogManager.Instance.ShowDialogText("tocca");
+                        for( int i=0; i < choiceOptions.Count; i++){
+                            if( selectedChoice == i){
+                                yield return DialogManager.Instance.ShowDialogText(answerOptions[i]);
+                            }
                         }
                     }
                     else
@@ -182,13 +167,10 @@ public class NPCController : MonoBehaviour, Interactable, ISavable
                     yield return DialogManager.Instance.ShowDialog(dialog, choiceOptions,
                         (choiceIndex) => selectedChoice = choiceIndex);
                     // Gestisce l'opzione selezionata
-                    if (selectedChoice == 0)
-                    {
-                        yield return DialogManager.Instance.ShowDialogText("suca");
-                    }
-                    else
-                    {
-                        yield return DialogManager.Instance.ShowDialogText("tocca");
+                    for( int i=0; i < choiceOptions.Count; i++){
+                        if( selectedChoice == i){
+                            yield return DialogManager.Instance.ShowDialogText(answerOptions[i]);
+                        }
                     }
                 }
                 else

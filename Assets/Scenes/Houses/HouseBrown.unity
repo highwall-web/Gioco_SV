@@ -735,6 +735,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: IsStarted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: IsCompleted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
+      propertyPath: IsInProgress
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695299321964686346, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: questToComplete
       value: 
       objectReference: {fileID: 11400000, guid: 117e8f4575a5ed24fb2922e575b8d479, type: 2}
@@ -852,7 +864,7 @@ PrefabInstance:
       objectReference: {fileID: 9104650670479662651, guid: 8e42488cc5f9e3c4981c8eabb9c5ece4, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC1-Past_Male
+      value: NPC1-Past_Male_Brown
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686391, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_RootOrder

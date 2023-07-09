@@ -884,7 +884,7 @@ PrefabInstance:
       objectReference: {fileID: 841313909, guid: 014e29b729a3b6647b4e8aecce89a1f5, type: 3}
     - target: {fileID: 4695299321964686385, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Name
-      value: NPC1-Past_Male
+      value: NPC1-Past_Male_Red
       objectReference: {fileID: 0}
     - target: {fileID: 4695299321964686390, guid: de38ba2277fadad47be0784ff5df6749, type: 3}
       propertyPath: m_Sprite
