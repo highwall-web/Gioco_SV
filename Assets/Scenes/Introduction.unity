@@ -7474,6 +7474,86 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
   m_UseDelaunayMesh: 0
+--- !u!1 &768639398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 768639399}
+  - component: {fileID: 768639401}
+  - component: {fileID: 768639400}
+  m_Layer: 5
+  m_Name: SkipText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &768639399
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768639398}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1556242758}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 20, y: -20}
+  m_SizeDelta: {x: 693.73, y: 48.080017}
+  m_Pivot: {x: 0.000000053085387, y: 0.99999785}
+--- !u!114 &768639400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768639398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    m_FontSize: 32
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 200
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: PREMI ESC PER SALTARE L'INTRODUZIONE
+--- !u!222 &768639401
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768639398}
+  m_CullTransparentMesh: 1
 --- !u!1 &848195005
 GameObject:
   m_ObjectHideFlags: 0
@@ -7655,6 +7735,95 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1080382720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1080382721}
+  - component: {fileID: 1080382724}
+  - component: {fileID: 1080382723}
+  - component: {fileID: 1080382722}
+  m_Layer: 5
+  m_Name: SkipFader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1080382721
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080382720}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1556242758}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1080382722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080382720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69f0a6ef3cee21d41900395f9897ae45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1080382723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080382720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 2100000, guid: 26f513972b375e84383b5414d83a15a3, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7fa399733b75f1a4e80ff21e35ec44c9, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1080382724
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080382720}
+  m_CullTransparentMesh: 1
 --- !u!1 &1166088036
 GameObject:
   m_ObjectHideFlags: 0
@@ -8120,6 +8289,8 @@ RectTransform:
   - {fileID: 1195281751}
   - {fileID: 1823385827}
   - {fileID: 244359125}
+  - {fileID: 768639399}
+  - {fileID: 1080382721}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12160,25 +12331,29 @@ MonoBehaviour:
   faderDuration: 1.5
   thunderFader2: {fileID: 736857559}
   thunderFader: {fileID: 736857561}
+  skipFader2: {fileID: 1080382720}
+  skipFader: {fileID: 1080382722}
+  skipText: {fileID: 768639400}
   dialogBox: {fileID: 1823385826}
   dialogBox_name: {fileID: 244359124}
   dialogSpriteOld: {fileID: 21300000, guid: 9050227c2d140cc4c9968021287db6be, type: 3}
   dialogSpriteNew: {fileID: 21300000, guid: bab995a5be9dfa344b6a49e7ff468860, type: 3}
+  dialogSpriteBoth: {fileID: 21300000, guid: 9a86d923eaa97be4e84542652aa6e978, type: 3}
   dialogText: {fileID: 1166088038}
   dialogText_name: {fileID: 186214280}
   lettersPerSecond: 45
   fontAssetNew: {fileID: 12800000, guid: f615e3945022a5b4d84993ebefc28c85, type: 3}
   fontAssetOld: {fileID: 12800000, guid: 26f513972b375e84383b5414d83a15a3, type: 3}
+  fontAssetBoth: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
   Mor: {fileID: 615923949}
   Istera: {fileID: 627738432}
   dialogIntro:
     lines:
     - In due universi distanti tra loro
-    - la vita si e' sviluppata
-    - con 1500 anni di differenza.
+    - la vita si e' sviluppata con
+    - 1500 anni di differenza.
     - 'Mor, del primo universo:'
     - Principe in attesa del trono.
-    - E
     - 'Istera, del secondo universo:'
     - Scienziata in procinto di fare
     - importanti scoperte.
@@ -12190,8 +12365,7 @@ MonoBehaviour:
     - '*brontola*'
     - Non sono pronto...
     - Riusciro' a governare?
-    - Papa' se n'e' andato...
-    - troppo presto...
+    - Papa' se n'e' andato troppo presto.
     - '*guarda il cielo*'
     - Una tempesta?
   dialogIstera:
@@ -12199,9 +12373,8 @@ MonoBehaviour:
     - Una tempesta?
     - '*pensierosa*'
     - Non succede niente di nuovo...
-    - Come faro' a completare
-    - la mia ricerca sugli
-    - universi paralleli?
+    - Come faro' a completare la mia
+    - ricerca sugli universi paralleli?
     - '*guarda il cielo*'
   dialogBoth:
     lines:
@@ -12210,10 +12383,10 @@ MonoBehaviour:
     lines:
     - Un fulmine li colpi',
     - rendendoli legati per sempre.
-    - Loro ancora non lo sapevano,
+    - Loro ancora non lo sanno,
     - ma ogni volta che uno dei due
-    - 'si addormenta, riesce a '
-    - vedere cio' che vede l'altro.
+    - si addormenta, riesce a vedere
+    - cio' che vede l'altro.
 --- !u!114 &2129001114
 MonoBehaviour:
   m_ObjectHideFlags: 0

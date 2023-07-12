@@ -14,15 +14,22 @@ public class Introduction : MonoBehaviour
     public GameObject thunderFader2;
     [SerializeField] Fader thunderFader;
 
+    public GameObject skipFader2;
+    [SerializeField] Fader skipFader;
+
+    public Text skipText;
+
     [SerializeField] GameObject dialogBox;
     [SerializeField] GameObject dialogBox_name;
     public Sprite dialogSpriteOld;
     public Sprite dialogSpriteNew;
+    public Sprite dialogSpriteBoth;
     [SerializeField] Text dialogText;
     [SerializeField] Text dialogText_name;
     [SerializeField] int lettersPerSecond;
     [SerializeField] Font fontAssetNew;
     [SerializeField] Font fontAssetOld;
+    [SerializeField] Font fontAssetBoth;
 
     public event Action OnShowDialog;
     public event Action OnDialogFinished;
@@ -42,16 +49,18 @@ public class Introduction : MonoBehaviour
     private int actualCharacter;
 
     private bool firstTimeFade;
-
     private bool firstTimeDialogIntro;
     private bool firstTimeDialogMor;
     private bool firstTimeDialogIstera;
     private bool firstTimeDialogBoth;
+    private bool fading;
     private int newScene;
     private int ended;
     private int fade;
     private int thunderFirst;
     private int thunderSecond;
+    private int skip;
+    private int textFadedInOut;
 
     private bool charTalking = false;
     // Start is called before the first frame update
@@ -64,9 +73,12 @@ public class Introduction : MonoBehaviour
         firstTimeDialogIstera = true;
         firstTimeDialogIntro = true;
         firstTimeDialogBoth = true;
+        fading = false;
         newScene = 0;
         thunderFirst = 0;
         thunderSecond = 0;
+        skip = 0;
+        textFadedInOut = 0; // Faded Out = 0; Faded In = 1
 
         characterAnimMor = Mor.GetComponent<CharacterAnimator>();
         characterAnimIstera = Istera.GetComponent<CharacterAnimator>();
@@ -111,66 +123,87 @@ public class Introduction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if(firstTimeDialogIntro){
-            firstTimeDialogIntro = false;
-            StartCoroutine(ShowDialog(dialogIntro));
-        }
-        // The fade in when the scene loads
-        if (firstTimeFade && !firstTimeDialogIntro && ended == 1)
+        if (!fading)
         {
-            firstTimeFade = false;
-            StartCoroutine(Fade(0));
-        }
-
-        // Mor's talking
-        if (fade == 0 && firstTimeDialogMor)
-        {
-            charTalking = true;
-            firstTimeDialogMor = false;
-            actualCharacter = 0;
-            StartCoroutine(ShowDialog(dialogMor));
+            if (textFadedInOut == 0)
+            {
+                StartCoroutine(FadeTextToZeroAlpha(5f, skipText));
+            }
+            else
+            {
+                StartCoroutine(FadeTextToFullAlpha(5f, skipText));
+            }
         }
 
-        // The first 2 thunders
-        if (ended == 2 && firstTimeDialogIstera && thunderFirst == 0)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            thunderFirst = 2;
-            thunderFader2.SetActive(true);
-            StartCoroutine(ThunderFadeFirst());
-        }
-        
-        // Istera's talking
-        if (ended == 2 && firstTimeDialogIstera && thunderFirst == 1)
-        {
-            charTalking = true;
-            firstTimeDialogIstera = false;
-            actualCharacter = 1;
-            StartCoroutine(ShowDialog(dialogIstera));
-        }
-
-        // The thunder that hits them and their scream
-        if (ended == 3 && thunderSecond == 0)
-        {
-            firstTimeDialogBoth = false;
-            thunderSecond = 2;
-            StartCoroutine(ThunderFadeSecond());
-            StartCoroutine(ShowDialog(dialogBoth));
-
-        }
-
-        if (ended == 4 && thunderSecond == 1 && !firstTimeDialogBoth)
-        {
-            firstTimeDialogBoth = true;
-            StartCoroutine(Fade(1));
-            StartCoroutine(ShowDialog(dialogOutro));
-        }
-        // Fade out to change scene
-        if (ended == 5 && newScene == 0)
-        {
-            newScene = 1;
-            
+            skip = 1;
             StartCoroutine("SwitchScene");
+        }
+        if (skip == 0)
+        {
+            if (firstTimeDialogIntro)
+            {
+                firstTimeDialogIntro = false;
+                StartCoroutine(ShowDialog(dialogIntro));
+            }
+            // The fade in when the scene loads
+            if (firstTimeFade && !firstTimeDialogIntro && ended == 1)
+            {
+                firstTimeFade = false;
+                StartCoroutine(Fade(0));
+            }
+
+            // Mor's talking
+            if (fade == 0 && firstTimeDialogMor)
+            {
+                charTalking = true;
+                firstTimeDialogMor = false;
+                actualCharacter = 0;
+                StartCoroutine(ShowDialog(dialogMor));
+            }
+
+            // The first 2 thunders
+            if (ended == 2 && firstTimeDialogIstera && thunderFirst == 0)
+            {
+                thunderFirst = 2;
+                thunderFader2.SetActive(true);
+                StartCoroutine(ThunderFadeFirst());
+            }
+
+            // Istera's talking
+            if (ended == 2 && firstTimeDialogIstera && thunderFirst == 1)
+            {
+                charTalking = true;
+                firstTimeDialogIstera = false;
+                actualCharacter = 1;
+                StartCoroutine(ShowDialog(dialogIstera));
+            }
+
+            // The thunder that hits them and their scream
+            if (ended == 3 && thunderSecond == 0)
+            {
+                firstTimeDialogBoth = false;
+                thunderSecond = 2;
+                actualCharacter = 2;
+                StartCoroutine(ThunderFadeSecond());
+                StartCoroutine(ShowDialog(dialogBoth));
+
+            }
+
+            if (ended == 4 && thunderSecond == 1 && !firstTimeDialogBoth)
+            {
+                firstTimeDialogBoth = true;
+                StartCoroutine(Fade(1));
+                StartCoroutine(ShowDialog(dialogOutro));
+            }
+            // Fade out to change scene
+            if (ended == 5 && newScene == 0)
+            {
+                newScene = 1;
+
+                StartCoroutine("SwitchScene");
+            }
         }
     }
 
@@ -200,8 +233,16 @@ public class Introduction : MonoBehaviour
             dialogText_name.font = fontAssetNew;
             dialogText.fontSize = 35;
             dialogText_name.fontSize = 20;
-        }else{
-            //both
+        }
+        else
+        {
+            dialogBox.GetComponent<Image>().sprite = dialogSpriteBoth;
+            dialogBox_name.GetComponent<Image>().sprite = dialogSpriteBoth;
+            dialogText_name.text = "Both";
+            dialogText.font = fontAssetBoth;
+            dialogText_name.font = fontAssetBoth;
+            dialogText.fontSize = 40;
+            dialogText_name.fontSize = 28;
         }
 
         OnShowDialog?.Invoke();
@@ -212,7 +253,6 @@ public class Introduction : MonoBehaviour
         if(charTalking){
             dialogBox_name.SetActive(true);
         }
-        
 
         foreach (var line in dialog.Lines)
         {
@@ -242,10 +282,48 @@ public class Introduction : MonoBehaviour
         }
     }
 
+    public IEnumerator FadeTextToZeroAlpha(float t, Text i)
+    {
+        i.color = new Color(i.color.r, i.color.g, i.color.b, 1);
+        while (i.color.a > 0.0f)
+        {
+            fading = true;
+            i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a - (Time.deltaTime / t));
+
+            if (i.color.a <= 0.0f)
+            {
+                i.color = new Color(i.color.r, i.color.g, i.color.b, 0.0f);
+                textFadedInOut = 1;
+                fading = false;
+            }
+
+            yield return null;
+        }
+    }
+
+    public IEnumerator FadeTextToFullAlpha(float t, Text i)
+    {
+        i.color = new Color(i.color.r, i.color.g, i.color.b, 0);
+        while (i.color.a < 0.99f)
+        {
+            fading = true;
+            i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a + (Time.deltaTime / t));
+
+            if (i.color.a >= 0.99f)
+            {
+                i.color = new Color(i.color.r, i.color.g, i.color.b, 1.0f);
+                textFadedInOut = 0;
+                fading = false;
+            }
+
+            yield return null;
+        }
+    }
+
     IEnumerator SwitchScene()
     {
-        fader2.SetActive(true);
-        yield return fader.FadeIn(faderDuration);
+        skipFader2.SetActive(true);
+        yield return skipFader.FadeIn(faderDuration);
         yield return SceneManager.LoadSceneAsync("Gameplay");
     }
 }
