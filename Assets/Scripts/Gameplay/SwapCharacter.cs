@@ -7,6 +7,10 @@ public class SwapCharacter : MonoBehaviour, ISavable
 {
     private Vector3 savePosition, loadPosition;
     public GameController gameController;
+
+    public Image icon;
+    public Sprite nuovaImmagine;
+    public Sprite vecchiaImmagine;
     private DialogManager dialogManager;
     private MenuController menuController;
     private PlayerController playerController;
@@ -43,6 +47,7 @@ public class SwapCharacter : MonoBehaviour, ISavable
                 {
                     actualCharacter = 1;
                     characterAnimator.setSprites(actualCharacter);
+                    icon.sprite = nuovaImmagine;
                     dialogText.font = fontAssetNew;
                     dialogText.fontSize = 35;
                 }
@@ -51,6 +56,7 @@ public class SwapCharacter : MonoBehaviour, ISavable
                     actualCharacter = 0;
                     characterAnimator.setSprites(actualCharacter);
                     dialogText.font = fontAssetOld;
+                    icon.sprite = vecchiaImmagine;
                     dialogText.fontSize = 40;
                 }
 

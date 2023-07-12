@@ -614,6 +614,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 1876228499}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: dialogText
       value: 
       objectReference: {fileID: 54320166}
@@ -626,9 +630,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12800000, guid: 26f513972b375e84383b5414d83a15a3, type: 3}
     - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: nuovaImmagine
+      value: 
+      objectReference: {fileID: 21300000, guid: 3cd8783fadb108c4ea93e7a5733b3012, type: 3}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 856332900}
+    - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: vecchiaImmagine
+      value: 
+      objectReference: {fileID: 21300000, guid: bd0724e4b8cae7445a056b934cce45ab, type: 3}
     - target: {fileID: 1137956269820065875, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: walkUpSprites_Mor.Array.size
       value: 4
@@ -1127,7 +1139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1870692558896418308, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 70.39999
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 1870692558896418311, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_IsActive
@@ -3266,6 +3278,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8, y: 9}
   m_EdgeRadius: 0
+--- !u!114 &1876228499 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1799346523885903787, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+  m_PrefabInstance: {fileID: 308121172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2014164822
 PrefabInstance:
   m_ObjectHideFlags: 0
