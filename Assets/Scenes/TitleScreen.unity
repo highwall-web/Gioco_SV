@@ -1317,7 +1317,6 @@ RectTransform:
   - {fileID: 845359950}
   - {fileID: 15896787}
   - {fileID: 957573230}
-  - {fileID: 685552029}
   - {fileID: 1918449290}
   - {fileID: 1489356502}
   - {fileID: 866871419}
@@ -1333,6 +1332,7 @@ RectTransform:
   - {fileID: 2033297732}
   - {fileID: 1617586304}
   - {fileID: 620123469}
+  - {fileID: 685552029}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

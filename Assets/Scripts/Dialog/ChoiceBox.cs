@@ -7,12 +7,15 @@ public class ChoiceBox : MonoBehaviour
 {
     [SerializeField] ChoiceText choiceTextPrefab;
 
+    [SerializeField] Font fontAssetNew;
+    [SerializeField] Font fontAssetOld;
+
     bool choiceSelected = false;
 
     List<ChoiceText> choiceTexts;
     int currentChoice;
 
-    public IEnumerator ShowChoices(List<string> choices, Action<int> onChoiceSelected)
+    public IEnumerator ShowChoices(List<string> choices, Action<int> onChoiceSelected, int actualCharacter)
     {
         choiceSelected = false;
         currentChoice = 0;
@@ -28,6 +31,16 @@ public class ChoiceBox : MonoBehaviour
         {
             var choiceTextObj = Instantiate(choiceTextPrefab, transform);
             choiceTextObj.TextField.text = choice;
+            if (actualCharacter == 0)
+            {
+                choiceTextObj.TextField.font = fontAssetOld;
+                choiceTextObj.TextField.fontSize = 40;
+            }
+            else
+            {
+                choiceTextObj.TextField.font = fontAssetNew;
+                choiceTextObj.TextField.fontSize = 30;
+            }
             choiceTexts.Add(choiceTextObj);
         }
         yield return new WaitUntil(() => choiceSelected == true);

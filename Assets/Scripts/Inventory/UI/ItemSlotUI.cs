@@ -7,6 +7,9 @@ public class ItemSlotUI : MonoBehaviour
 {
     [SerializeField] Text nameText;
 
+    [SerializeField] Font fontAssetNew;
+    [SerializeField] Font fontAssetOld;
+
     RectTransform rectTransform;
 
     private void Awake()
@@ -20,6 +23,6 @@ public class ItemSlotUI : MonoBehaviour
 
     public void SetData(ItemBase itemBase)
     {
-        nameText.text = itemBase.Name;
+        nameText.text = itemBase.Name; 
     }
 }

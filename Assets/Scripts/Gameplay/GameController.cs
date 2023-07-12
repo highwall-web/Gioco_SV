@@ -1,5 +1,8 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum GameState { FreeRoam, Dialog, Menu, Diary, Paused }
@@ -12,6 +15,11 @@ public class GameController : MonoBehaviour
 
     [SerializeField] Font fontAssetNew;
     [SerializeField] Font fontAssetOld;
+
+    [SerializeField] Dialog dialogExit;
+
+    private List<string> choicesExit;
+
     private SwapCharacter swapCharacter;
     public Sprite dialogSpriteOld;
     public Sprite dialogSpriteNew;
@@ -41,6 +49,7 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
+        choicesExit = new List<string>() { "Si'", "No" };
         swapCharacter = playerController.GetComponent<SwapCharacter>();
 
         DialogManager.Instance.OnShowDialog += () =>
@@ -163,7 +172,24 @@ public class GameController : MonoBehaviour
         else if (selectedItem == 4)
         {
             // Quit
+            StartCoroutine("ExitGame");
             state = GameState.FreeRoam;
         }
+    }
+
+    IEnumerator ExitGame()
+    {
+        int selectedChoice = 0;
+        yield return DialogManager.Instance.ShowDialog(dialogExit, choicesExit,
+            (choiceIndex) => selectedChoice = choiceIndex);
+        if (selectedChoice == 0)
+        {
+            StartCoroutine("SwitchScene");
+        }
+    }
+    IEnumerator SwitchScene()
+    {
+        Destroy(gameObject.transform.parent.gameObject); // Destroys the DontDestroyOnLoad
+        yield return SceneManager.LoadSceneAsync("TitleScreen");
     }
 }

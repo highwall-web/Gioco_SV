@@ -6,6 +6,14 @@ using UnityEngine.UI;
 
 public class DiaryUI : MonoBehaviour
 {
+    [SerializeField] GameObject player;
+
+    [SerializeField] Font fontAssetNew;
+    [SerializeField] Font fontAssetOld;
+
+    [SerializeField] Sprite pageSpriteOld;
+    [SerializeField] Sprite pageSpriteNew;
+
     [SerializeField] GameObject itemList;
     [SerializeField] ItemSlotUI itemSlotUI;
 
@@ -41,6 +49,7 @@ public class DiaryUI : MonoBehaviour
 
     public void UpdateItemList()
     {
+        int actualCharacter = player.GetComponent<SwapCharacter>().getActualCharacter();
         //clear all existing items
         foreach (Transform child in itemList.transform)
         {
@@ -50,12 +59,33 @@ public class DiaryUI : MonoBehaviour
         List<ItemBase> items = diary.GetItems();
         if (items != null && items.Count > 0)
         {
+            /*if (actualCharacter == 0)
+            {
+                GameObject.Find("Icon").GetComponent<Image>().sprite = pageSpriteOld;
+                Debug.Log(GameObject.Find("Icon").GetComponent<Image>().sprite);
+            }
+            else
+            {
+                GameObject.Find("Icon").GetComponent<Image>().sprite = pageSpriteNew;
+                Debug.Log(GameObject.Find("Icon").GetComponent<Image>().sprite);
+            }*/
             // La lista degli oggetti è valida e contiene almeno un elemento
             itemList.SetActive(true);
+            
             foreach (var itemSlot in diary.GetItems())
             {
                 var slotUIObj = Instantiate(itemSlotUI, itemList.transform);
                 slotUIObj.SetData(itemSlot);
+                if (actualCharacter == 0)
+                {
+                    slotUIObj.Name.font = fontAssetOld;
+                    slotUIObj.Name.fontSize = 32;
+                }
+                else
+                {
+                    slotUIObj.Name.font = fontAssetNew;
+                    slotUIObj.Name.fontSize = 25;
+                }
 
                 slotUIList.Add(slotUIObj);
             }

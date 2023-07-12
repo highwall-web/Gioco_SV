@@ -93,7 +93,7 @@ public class DialogManager : MonoBehaviour
 
         if (choices != null && choices.Count > 1)
         {
-            yield return choiceBox.ShowChoices(choices, onChoiceSelected);
+            yield return choiceBox.ShowChoices(choices, onChoiceSelected, actualCharacter);
         }
 
         dialogBox.SetActive(false);

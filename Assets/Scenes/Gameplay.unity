@@ -498,6 +498,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 558258138174732165, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 345709310}
+    - target: {fileID: 558258138174732165, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: textColor.a
       value: 1
       objectReference: {fileID: 0}
@@ -513,6 +517,22 @@ PrefabInstance:
       propertyPath: textColor.r
       value: 0.19607843
       objectReference: {fileID: 0}
+    - target: {fileID: 558258138174732165, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: fontAssetNew
+      value: 
+      objectReference: {fileID: 12800000, guid: f615e3945022a5b4d84993ebefc28c85, type: 3}
+    - target: {fileID: 558258138174732165, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: fontAssetOld
+      value: 
+      objectReference: {fileID: 12800000, guid: 26f513972b375e84383b5414d83a15a3, type: 3}
+    - target: {fileID: 558258138174732165, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: pageSpriteNew
+      value: 
+      objectReference: {fileID: 21300000, guid: 3cd8783fadb108c4ea93e7a5733b3012, type: 3}
+    - target: {fileID: 558258138174732165, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: pageSpriteOld
+      value: 
+      objectReference: {fileID: 21300000, guid: bd0724e4b8cae7445a056b934cce45ab, type: 3}
     - target: {fileID: 558258138174732165, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: highlightedColor.a
       value: 1
@@ -537,6 +557,18 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 739590819172140948, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 345709310}
+    - target: {fileID: 739590819172140948, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: fontAssetNew
+      value: 
+      objectReference: {fileID: 12800000, guid: f615e3945022a5b4d84993ebefc28c85, type: 3}
+    - target: {fileID: 739590819172140948, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: fontAssetOld
+      value: 
+      objectReference: {fileID: 12800000, guid: 26f513972b375e84383b5414d83a15a3, type: 3}
     - target: {fileID: 759664221997036681, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1095,7 +1127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1870692558896418308, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 70.400024
+      value: 70.39999
       objectReference: {fileID: 0}
     - target: {fileID: 1870692558896418311, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_IsActive
@@ -1133,6 +1165,14 @@ PrefabInstance:
       propertyPath: dialogSpriteOld
       value: 
       objectReference: {fileID: 21300000, guid: 9050227c2d140cc4c9968021287db6be, type: 3}
+    - target: {fileID: 1870692559931971287, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: dialogExit.lines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1870692559931971287, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: dialogExit.lines.Array.data[0]
+      value: Vuoi uscire senza salvare?
+      objectReference: {fileID: 0}
     - target: {fileID: 1870692560642804306, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -1529,6 +1569,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5096393961167156947, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: m_Text
+      value: Pagina
+      objectReference: {fileID: 0}
     - target: {fileID: 5157608834078026564, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1737,6 +1781,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8705533688766317987, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: fontAssetNew
+      value: 
+      objectReference: {fileID: 12800000, guid: f615e3945022a5b4d84993ebefc28c85, type: 3}
+    - target: {fileID: 8705533688766317987, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: fontAssetOld
+      value: 
+      objectReference: {fileID: 12800000, guid: 26f513972b375e84383b5414d83a15a3, type: 3}
+    - target: {fileID: 8705533688766317987, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 505205943}
     - target: {fileID: 9037516732042038965, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2041,6 +2097,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00d2dae0d82846641ab8b692fa2e2982, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &505205943 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1870692558764605596, guid: b9d834dcdfea3d849b1c54c5d8a97554, type: 3}
+  m_PrefabInstance: {fileID: 308121172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345709310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d078f2bddbac3e48bb33ae2c2a19027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &655527273 stripped
