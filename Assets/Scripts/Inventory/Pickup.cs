@@ -6,7 +6,7 @@ public class Pickup : MonoBehaviour, Interactable, ISavable
 {
     [SerializeField] ItemBase item;
 
-    public int used = 0;
+    [SerializeField] public int used = 0;
 
     public object CaptureState()
     {

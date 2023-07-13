@@ -93,6 +93,28 @@ public class GameController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Delete))
         {
+            NPCController[] npcControllers = FindObjectsOfType<NPCController>();
+
+            if (npcControllers.Length > 0)
+            {
+                foreach (NPCController npcController in npcControllers)
+                {
+                    npcController.IsStarted = 0;
+                    npcController.IsInProgress = 0;
+                    npcController.IsCompleted = 0;
+                }
+            }
+
+            Pickup[] pickups = FindObjectsOfType<Pickup>();
+
+            if (pickups.Length > 0)
+            {
+                foreach (Pickup pick in pickups)
+                {
+                    pick.used = 0;
+                }
+            }
+
             PlayerPrefs.DeleteAll();
             PlayerPrefs.Save();
             Debug.Log("PlayerPrefs eliminati.");
