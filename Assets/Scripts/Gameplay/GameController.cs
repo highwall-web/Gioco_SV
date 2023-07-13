@@ -87,8 +87,17 @@ public class GameController : MonoBehaviour
         }
     }
 
+
+
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Delete))
+        {
+            PlayerPrefs.DeleteAll();
+            PlayerPrefs.Save();
+            Debug.Log("PlayerPrefs eliminati.");
+        }
+
         if (state == GameState.FreeRoam)
         {
             playerController.HandleUpdate();
