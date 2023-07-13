@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Page7
   m_EditorClassIdentifier: 
   objName: First Page
-  description: Pagina7
+  description: E' una foto di un posto che non conosco.
   icon: {fileID: 21300000, guid: bd0724e4b8cae7445a056b934cce45ab, type: 3}

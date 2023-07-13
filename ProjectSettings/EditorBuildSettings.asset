@@ -44,17 +44,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Routes and Villages/CastleRoute.unity
     guid: 7c5b3ba974e23134583deba940c6078e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Routes and Villages/LaboratoryRoute.unity
     guid: 0838535511fcb0e43a6540c0be6aa778
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Important Buildings/Laboratory.unity
     guid: 430fa390ac7211e43b8ee4c9606f5432
   - enabled: 1
     path: Assets/Scenes/Important Buildings/InsideCastle.unity
     guid: c71d47d427129a6469c29cd3c0d529ef
-    path: Assets/Scenes/Important Buildings/LaboratoryInside.unity
-    guid: 431a9bc7dbc6f1a43a3d7744bf45905d
   - enabled: 1
     path: Assets/Scenes/Introduction.unity
     guid: d010467dad043a24493b7f3703971121
